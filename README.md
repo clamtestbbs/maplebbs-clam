@@ -96,7 +96,7 @@
 把 doc/crontab 的內容加入 crontab 讓作業系統自動排程
 
 
-# 五、設定 BBS 環境 -- 如果有 xinetd
+# 五 (Ａ)、設定 BBS 環境 -- 如果有 xinetd
 
 如果沒有 /etc/xinetd.d/ 這目錄，請跳到五（Ｂ或Ｃ），通常 Linux 應該有 xinetd 套件可以安裝才對。
 在 Debian GNU/Linux 下可以嘗試用以下指令先行安裝並開啟相關服務
@@ -153,7 +153,7 @@
     su bbs -c '/home/bbs/bin/account'
 
 
-## 五、設定 BBS 環境 -- 如果沒有 xinetd
+# 五 (Ｂ)、設定 BBS 環境 -- 如果沒有 xinetd
 **(這部分還沒試過@@)**
 
 沒 xinetd，改用 standalone 啟動。
@@ -213,6 +213,7 @@ itoc.bbs@bbs.tnfsh.tn.edu.tw
 
 WWW: http://processor.tfcis.org/~itoc
 
+## --
 
 Adapt by holishing.bbs@ptt.cc
 
