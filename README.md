@@ -43,6 +43,10 @@
 
 輸入 管理帳號 bbs 的密碼
 
+    -root- chown -R bbs:bbs /home/bbs
+
+記得設定好bbs家目錄的權限, 尤其如果常以root身分從複製資料過去時更要注意
+
 # 三、下載 BBS 程式
 
 在 [這裡](https://github.com/holishing/maplebbs-itoc/tree/test-bbs) 可以找到最新的程式版本。
