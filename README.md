@@ -49,7 +49,7 @@
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
-    `-bbs- $ git clone -b test-bbs https://github.com/holishing/maplebbs-itoc`
+    -bbs- $ git clone -b test-bbs https://github.com/holishing/maplebbs-itoc
     
 # 四、安裝 BBS
 
