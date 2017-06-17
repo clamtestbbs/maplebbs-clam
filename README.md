@@ -98,7 +98,7 @@
 您需要等待一段時間來完成編譯
 <br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各BBS站MapleBBS/BBS架站相關看板查詢
 
-    -bbs- $ crontab /home/bbs/maplebbs-itoc/doc/crontab
+    -bbs- $ crontab /home/bbs/maplebbs-itoc/sample/crontab
 
 把 doc/crontab 的內容加入 crontab 讓作業系統自動排程
 
