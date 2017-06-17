@@ -1,8 +1,19 @@
-# 快速安裝手冊
+# 快速安裝手冊 
+**(encoding: utf-8)**
 
 [原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)是寫給要安裝 itoc 所維護的 bbs 程式版本所使用的，並不適用其他 bbs 版本。
 
-本 fork 僅調整 source code 擺放的位置以及嘗試盡可能照[原本的壓縮檔](http://processor.tfcis.org/~itoc/download/MapleBBS-3.10-20121021-PACK.tgz)呈現補齊目錄格式
+本 fork 調整調整內容:
+
+source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/bbs` 下時做版本控制。
+
+以及嘗試盡可能照[原本的壓縮檔](http://processor.tfcis.org/~itoc/download/MapleBBS-3.10-20121021-PACK.tgz)呈現補齊目錄格式 (by adding `.gitkeep`)
+<br>若安裝完成後有刪除 `.gitkeep` 需求請自行用 `find` 等指令執行
+
+將點歌範本(`ktv`)與相關安裝手冊(`gem`)併入現在`sample/bbs/`裡部分看板的精華區:
+
+    ktv -> sample/bbs/gem/brd/ktv (直接取代原本只有一首歌的精華區)
+    gem -> sample/bbs/gem/brd/admin (直接給有站長權限的使用者參考)
 
 **以下安裝方式步驟可能會略有調整。**
 
@@ -93,7 +104,7 @@
     -bbs- $ make clean linux install 
 
 如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
-`sun` `solaris` `sol-x86` `freebsd` `bsd`
+<br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
 
 您需要等待一段時間來完成編譯
 <br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各BBS站MapleBBS/BBS架站相關看板查詢
