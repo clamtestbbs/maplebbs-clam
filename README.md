@@ -12,7 +12,7 @@
 <br>其他系統則沒有試過不清楚，這篇也會砍掉關於此部分，轉信設定部分也會砍
 <br>對該部分有興趣建議按[原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)嘗試。
 
-安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，唯一要提醒您的是，請安裝 **make gcc git xinetd** 等程式套件，因為 bbs 會用到。
+安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，唯一要提醒您的是，請安裝 **nano vim make gcc git xinetd** 等程式套件，因為 bbs 會用到。
 
 
 # 二、建立 BBS 帳號
@@ -25,19 +25,19 @@
 如果您是 Linux 的話，在最後一行加上
 
     bbs:x:9999:999:BBS Administrator,,,:/home/bbs:/bin/bash
-    (為求保險起見跟 /etc/passwd 裡列出其他使用者的格式一樣)
+    (為求保險起見跟 `/etc/passwd` 裡列出其他使用者的格式一樣)
 
-(當然您也可以用 useradd,adduser 的指令來完成相同的動作)
+(當然您也可以用 `useradd`,`adduser` 的指令來完成相同的動作)
 
     -root- # vim /etc/group
 
-(假設編輯器是 vim，如果不是的話，請自行改變)
+(假設編輯器是 `vim`，如果不是的話，請自行改用其他編輯器如 `nano` )
 
 如果您是 Linux 的話，在最後一行加上
 
     bbs:x:999:bbs
 
-(當然您也可以用 addgroup 或 groupadd 的指令來完成相同的動作)
+(當然您也可以用 `addgroup` 或 `groupadd` 的指令來完成相同的動作)
 
     -root- # passwd bbs
 
@@ -148,7 +148,7 @@
 
 .
 
-    -root- # vim /etc/rc.d/rc.local
+    -root- # vim /etc/rc.local
 
 加入以下數行 (這檔案有可能原本是沒有任何文字的開新檔案)
 
@@ -159,6 +159,11 @@
     su bbs -c '/home/bbs/bin/camera'
     su bbs -c '/home/bbs/bin/account'
 
+之後再
+
+    -root- # chmod +x /etc/rc.local
+
+這樣開機後 rc.local 才跑得動
 
 # 五 (Ｂ)、設定 BBS 環境 -- 如果沒有 xinetd
 
@@ -185,6 +190,12 @@
 
     su bbs -c '/home/bbs/bin/camera'
     su bbs -c '/home/bbs/bin/account'
+
+之後再
+
+    -root- # chmod +x /etc/rc.local
+
+這樣開機後 rc.local 才跑得動
 
 
 # 六、其他設定
