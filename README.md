@@ -68,7 +68,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
     
 # 四、安裝 BBS
 
-以 bbs 身分登入。
+以 bbs 身分登入，進去 source 目錄 (`/home/bbs/maplebbs-itoc`) 。
 
     -bbs- $ cd /home/bbs/maplebbs-itoc; cp sample/config.h include/
     -bbs- $ vim /home/bbs/maplebbs-itoc/include/config.h
@@ -96,7 +96,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 之後還要記得將 bbs 預設的架構範例複製到家目錄(`/home/bbs`)底下建立起來:
 
-    -bbs- $ cd /home/bbs/maplebbs-itoc (隨時確認自己還在家目錄底下)
+    -bbs- $ cd /home/bbs/maplebbs-itoc (確認自己還在source目錄底下)
     -bbs- $ cp -r sample/bbs/* ~;cp sample/bbs/.* ~
 
 之後確定自己在`/home/bbs/maplebbs-itoc/`目錄底下之後就開始編譯
@@ -111,7 +111,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
     -bbs- $ crontab /home/bbs/maplebbs-itoc/sample/crontab
 
-把 doc/crontab 的內容加入 crontab 讓作業系統自動排程
+把 sample/crontab 的內容加入 crontab 讓作業系統自動排程
 
 
 # 五 (Ａ)、設定 BBS 環境 -- 如果有 xinetd
@@ -119,9 +119,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 如果沒有 /etc/xinetd.d/ 這目錄，請跳到五（Ｂ或Ｃ），通常 Linux 應該有 xinetd 套件可以安裝才對。
 在 Debian GNU/Linux 下可以嘗試用以下指令先行安裝並開啟相關服務
 
-    -root- # apt-get update
-    -root- # apt-get install xinetd
-    -root- # service xinetd start
+確定安裝完成後
 
 以 root 身分登入。
 
