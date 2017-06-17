@@ -85,7 +85,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 
 修改 schoolname bbsname ... 等數項，例如改成以下這樣
-(請參考 `sample/install.sh` 文件前面的註解，對名稱有些限制)
+(請參考 `sample/sh/install.sh` 文件前面的註解，對名稱有些限制)
 
     schoolname="交大電子"
     bbsname="蘋果樂園"
