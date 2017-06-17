@@ -12,7 +12,7 @@
 <br>其他系統則沒有試過不清楚，這篇也會砍掉關於此部分，轉信設定部分也會砍
 <br>對該部分有興趣建議按[原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)嘗試。
 
-安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，唯一要提醒您的是，請安裝 (sed awk) **make gcc git xinetd** 等程式，因為 bbs 會用到。
+安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，唯一要提醒您的是，請安裝 **make gcc git xinetd** 等程式套件，因為 bbs 會用到。
 
 
 # 二、建立 BBS 帳號
@@ -43,7 +43,7 @@
 
 輸入 管理帳號 bbs 的密碼
 
-    -root- chown -R bbs:bbs /home/bbs
+    -root- # chown -R bbs:bbs /home/bbs
 
 記得設定好bbs家目錄的權限, 尤其如果常以root身分從複製資料過去時更要注意
 
@@ -53,7 +53,7 @@
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
-    -bbs- $ git clone -b test-bbs https://github.com/holishing/maplebbs-itoc
+    -bbs- ~$ git clone -b test-bbs https://github.com/holishing/maplebbs-itoc
     
 # 四、安裝 BBS
 
@@ -83,14 +83,17 @@
     myipaddr="140.113.55.66"
     myhostname="nctu5566.dorm3.nctu.edu.tw"
 
+之後還要記得將 bbs 預設的架構範例複製到家目錄(`/home/bbs`)底下建立起來:
+
+    -bbs- $ cd /home/bbs/maplebbs-itoc (隨時確認自己還在家目錄底下)
+    -bbs- $ cp -r sample/bbs/* ~;cp sample/bbs/.* ~
 
 之後確定自己在`/home/bbs/maplebbs-itoc/`目錄底下之後就開始編譯
 
     -bbs- $ make clean linux install 
 
 如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
-
-    `sun` `solaris` `sol-x86` `freebsd` `bsd`
+`sun` `solaris` `sol-x86` `freebsd` `bsd`
 
 您需要等待一段時間來完成編譯
 <br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各BBS站MapleBBS/BBS架站相關看板查詢
@@ -158,7 +161,6 @@
 
 
 # 五 (Ｂ)、設定 BBS 環境 -- 如果沒有 xinetd
-**(這部分還沒試過@@)**
 
 沒 xinetd，改用 standalone 啟動。
 
@@ -173,11 +175,11 @@
     # MapleBBS
     #
     /home/bbs/bin/bbsd
-    #/home/bbs/bin/bmtad #如果沒要開啟相關服務可忽略
-    #/home/bbs/bin/gemd #如果沒要開啟相關服務可忽略
-    #/home/bbs/bin/bguard #如果沒要開啟相關服務可忽略
-    #/home/bbs/bin/bpop3d #如果沒要開啟相關服務可忽略
-    #/home/bbs/bin/bnntpd #如果沒要開啟相關服務可忽略
+    #/home/bbs/bin/bmtad   #如果沒要開啟相關服務可忽略
+    #/home/bbs/bin/gemd    #如果沒要開啟相關服務可忽略
+    #/home/bbs/bin/bguard  #如果沒要開啟相關服務可忽略
+    #/home/bbs/bin/bpop3d  #如果沒要開啟相關服務可忽略
+    #/home/bbs/bin/bnntpd  #如果沒要開啟相關服務可忽略
     /home/bbs/bin/xchatd
     #/home/bbs/innd/innbbsd #如果沒要開啟相關服務可忽略
 
