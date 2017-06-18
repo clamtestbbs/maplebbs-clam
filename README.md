@@ -64,7 +64,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
-    -bbs- ~$ git clone -b test-bbs https://github.com/holishing/maplebbs-itoc
+    -bbs- ~$ git clone https://github.com/holishing/maplebbs-itoc
     
 # 四、安裝 BBS
 
