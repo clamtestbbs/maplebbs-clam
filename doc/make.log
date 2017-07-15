@@ -1,0 +1,1242 @@
+make[1]: Entering directory '/home/bbs/src/lib'
+rm -f libdao.a *.o *~
+make[1]: Leaving directory '/home/bbs/src/lib'
+make[1]: Entering directory '/home/bbs/src/daemon'
+rm -f bguard bhttpd bmtad bnntpd bpop3d gemd xchatd *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Entering directory '/home/bbs/src/innbbsd'
+rm -f innbbsd bbslink *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Entering directory '/home/bbs/src/maple'
+rm -f bbsd *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/maple'
+make[1]: Entering directory '/home/bbs/src/so'
+rm -f *.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/so'
+make[1]: Entering directory '/home/bbs/src/game'
+rm -f *.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/game'
+make[1]: Entering directory '/home/bbs/src/pip'
+rm -f pip.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/pip'
+make[1]: Entering directory '/home/bbs/src/util'
+rm -f account acl-sort bbsmail bquota brdmail camera counter expire gem-index hdr-dump mailpost outgo poststat reaper redir setperm setusr showACCT showBRD showDIR showUSR topgem topsong topusr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util'
+make[1]: Entering directory '/home/bbs/src/util/backup'
+rm -f backupacct backupbrd backupgem backupoth backupusr restoreacct restorebrd restoregem restoreusr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/backup'
+make[1]: Entering directory '/home/bbs/src/util/tran'
+rm -f brd2gem transacct transbrd ats2bmw ats2brd ats2gem ats2mf ats2pal ats2usr cola2brd cola2gem cola2post cola2usr fb2brd fb2gem fb2pal fb2usr mag2brd mag2gem mag2usr snap2usr snap2brd sob2brd sob2gem sob2pal sob2usr wd2bmw wd2brd wd2gem wd2list wd2mf wd2pal wd2pip wd2usr windtop2brd windtop2mf windtop2pip windtop2usr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/tran'
+make[1]: Entering directory '/home/bbs/src/util/uno'
+rm -f collect_uno conflict_uno fix_uno *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/uno'
+make[1]: Entering directory '/home/bbs/src/lib'
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c is_alnum.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c is_alpha.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c not_addr.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_aton.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_name.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_open.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_smtp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ansi.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_cat.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_cmp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_decode.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_folder.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_fpath.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_from.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_has.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_hash.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_lower.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_lowest.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ncmp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ncpy.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_passwd.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_stamp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_str.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_sub.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_tail.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_time.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_trim.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ttl.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c archiv32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c chrono32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hash32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c radix32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_cat.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_cp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_img.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_ln.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_lock.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_map.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_mode.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_mv.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_new.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_path.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_rm.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_suck.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c mak_dirs.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_add.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_bot.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_num.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_del.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_get.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_ins.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_put.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_ref.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_sync.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hdr_fpath.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hdr_stamp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c shm.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c splay.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c acl_has.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rfc2047.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c xwrite.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dl_lib.c
+ar rv libdao.a is_alnum.o is_alpha.o not_addr.o dns.o dns_aton.o dns_name.o dns_open.o dns_smtp.o str_ansi.o str_cat.o str_cmp.o str_decode.o str_folder.o str_fpath.o str_from.o str_has.o str_hash.o str_lower.o str_lowest.o str_ncmp.o str_ncpy.o str_passwd.o str_stamp.o str_str.o str_sub.o str_tail.o str_time.o str_trim.o str_ttl.o archiv32.o chrono32.o hash32.o radix32.o f_cat.o f_cp.o f_img.o f_ln.o f_lock.o f_map.o f_mode.o f_mv.o f_new.o f_path.o f_rm.o f_suck.o mak_dirs.o rec_add.o rec_bot.o rec_num.o rec_del.o rec_get.o rec_ins.o rec_put.o rec_ref.o rec_sync.o hdr_fpath.o hdr_stamp.o shm.o splay.o acl_has.o rfc2047.o xwrite.o dl_lib.o
+a - is_alnum.o
+a - is_alpha.o
+a - not_addr.o
+a - dns.o
+a - dns_aton.o
+a - dns_name.o
+a - dns_open.o
+a - dns_smtp.o
+a - str_ansi.o
+a - str_cat.o
+a - str_cmp.o
+a - str_decode.o
+a - str_folder.o
+a - str_fpath.o
+a - str_from.o
+a - str_has.o
+a - str_hash.o
+a - str_lower.o
+a - str_lowest.o
+a - str_ncmp.o
+a - str_ncpy.o
+a - str_passwd.o
+a - str_stamp.o
+a - str_str.o
+a - str_sub.o
+a - str_tail.o
+a - str_time.o
+a - str_trim.o
+a - str_ttl.o
+a - archiv32.o
+a - chrono32.o
+a - hash32.o
+a - radix32.o
+a - f_cat.o
+a - f_cp.o
+a - f_img.o
+a - f_ln.o
+a - f_lock.o
+a - f_map.o
+a - f_mode.o
+a - f_mv.o
+a - f_new.o
+a - f_path.o
+a - f_rm.o
+a - f_suck.o
+a - mak_dirs.o
+a - rec_add.o
+a - rec_bot.o
+a - rec_num.o
+a - rec_del.o
+a - rec_get.o
+a - rec_ins.o
+a - rec_put.o
+a - rec_ref.o
+a - rec_sync.o
+a - hdr_fpath.o
+a - hdr_stamp.o
+a - shm.o
+a - splay.o
+a - acl_has.o
+a - rfc2047.o
+a - xwrite.o
+a - dl_lib.o
+ranlib libdao.a
+make[1]: Leaving directory '/home/bbs/src/lib'
+make[1]: Entering directory '/home/bbs/src/daemon'
+make[2]: Entering directory '/home/bbs/src/daemon'
+gcc -o bguard bguard.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bhttpd bhttpd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bmtad bmtad.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bnntpd bnntpd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bpop3d bpop3d.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o gemd gemd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o xchatd xchatd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+make[2]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Entering directory '/home/bbs/src/innbbsd'
+make[2]: Entering directory '/home/bbs/src/innbbsd'
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o channel.o channel.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o bbslib.o bbslib.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o convcode.o convcode.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o inntobbs.o inntobbs.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o rec_article.o rec_article.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o nocem.o nocem.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o history.o history.c
+gcc -o innbbsd channel.o bbslib.o convcode.o inntobbs.o rec_article.o nocem.o history.o  -L../lib -ldao
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o bbslink.o bbslink.c
+gcc -o bbslink bbslink.o bbslib.o convcode.o inntobbs.o rec_article.o nocem.o history.o  -L../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Entering directory '/home/bbs/src/maple'
+make[2]: Entering directory '/home/bbs/src/maple'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o acct.o acct.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o bbsd.o bbsd.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o bmw.o bmw.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o board.o board.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o cache.o cache.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o edit.o edit.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o favor.o favor.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o gem.o gem.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o mail.o mail.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o menu.o menu.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o more.o more.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pal.o pal.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o post.o post.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o talk.o talk.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o ulist.o ulist.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o user.o user.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o visio.o visio.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o window.o window.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o xover.o xover.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o xpost.o xpost.c
+gcc -o bbsd acct.o bbsd.o bmw.o board.o cache.o edit.o favor.o gem.o mail.o menu.o more.o pal.o post.o talk.o ulist.o user.o visio.o window.o xover.o xpost.o -L../lib -ldao -lcrypt -lresolv -ldl -rdynamic
+make[2]: Leaving directory '/home/bbs/src/maple'
+make[1]: Leaving directory '/home/bbs/src/maple'
+make[1]: Entering directory '/home/bbs/src/so'
+make[2]: Entering directory '/home/bbs/src/so'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c admutil.c
+ld -s -G admutil.o -o admutil.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c aloha.c
+ld -s -G aloha.o -o aloha.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bank.c
+ld -s -G bank.o -o bank.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c chat.c
+ld -s -G chat.o -o chat.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c help.c
+ld -s -G help.o -o help.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c innbbs.c
+ld -s -G innbbs.o -o innbbs.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c manage.c
+ld -s -G manage.o -o manage.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c newbrd.c
+ld -s -G newbrd.o -o newbrd.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c song.c
+ld -s -G song.o -o song.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c vote.c
+ld -s -G vote.o -o vote.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c xyz.c
+ld -s -G xyz.o -o xyz.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c calendar.c
+ld -s -G calendar.o -o calendar.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c classtable.c
+ld -s -G classtable.o -o classtable.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c credit.c
+ld -s -G credit.o -o credit.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c todo.c
+ld -s -G todo.o -o todo.so -L../lib -ldao
+rm aloha.o credit.o xyz.o bank.o todo.o help.o chat.o song.o innbbs.o vote.o classtable.o newbrd.o admutil.o manage.o calendar.o
+make[2]: Leaving directory '/home/bbs/src/so'
+make[1]: Leaving directory '/home/bbs/src/so'
+make[1]: Entering directory '/home/bbs/src/game'
+make[2]: Entering directory '/home/bbs/src/game'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bar.c
+ld -s -G bar.o -o bar.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bingo.c
+ld -s -G bingo.o -o bingo.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bj.c
+ld -s -G bj.o -o bj.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bwboard.c
+ld -s -G bwboard.o -o bwboard.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c chessmj.c
+ld -s -G chessmj.o -o chessmj.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c dice.c
+ld -s -G dice.o -o dice.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c dragon.c
+ld -s -G dragon.o -o dragon.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c fantan.c
+make[1]: Entering directory '/home/bbs/src/lib'
+rm -f libdao.a *.o *~
+make[1]: Leaving directory '/home/bbs/src/lib'
+make[1]: Entering directory '/home/bbs/src/daemon'
+rm -f bguard bhttpd bmtad bnntpd bpop3d gemd xchatd *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Entering directory '/home/bbs/src/innbbsd'
+rm -f innbbsd bbslink *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Entering directory '/home/bbs/src/maple'
+rm -f bbsd *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/maple'
+make[1]: Entering directory '/home/bbs/src/so'
+rm -f *.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/so'
+make[1]: Entering directory '/home/bbs/src/game'
+rm -f *.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/game'
+make[1]: Entering directory '/home/bbs/src/pip'
+rm -f pip.so *.o *~
+make[1]: Leaving directory '/home/bbs/src/pip'
+make[1]: Entering directory '/home/bbs/src/util'
+rm -f account acl-sort bbsmail bquota brdmail camera counter expire gem-index hdr-dump mailpost outgo poststat reaper redir setperm setusr showACCT showBRD showDIR showUSR topgem topsong topusr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util'
+make[1]: Entering directory '/home/bbs/src/util/backup'
+rm -f backupacct backupbrd backupgem backupoth backupusr restoreacct restorebrd restoregem restoreusr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/backup'
+make[1]: Entering directory '/home/bbs/src/util/tran'
+rm -f brd2gem transacct transbrd ats2bmw ats2brd ats2gem ats2mf ats2pal ats2usr cola2brd cola2gem cola2post cola2usr fb2brd fb2gem fb2pal fb2usr mag2brd mag2gem mag2usr snap2usr snap2brd sob2brd sob2gem sob2pal sob2usr wd2bmw wd2brd wd2gem wd2list wd2mf wd2pal wd2pip wd2usr windtop2brd windtop2mf windtop2pip windtop2usr *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/tran'
+make[1]: Entering directory '/home/bbs/src/util/uno'
+rm -f collect_uno conflict_uno fix_uno *.exe *.o *~
+make[1]: Leaving directory '/home/bbs/src/util/uno'
+make[1]: Entering directory '/home/bbs/src/lib'
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c is_alnum.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c is_alpha.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c not_addr.c
+not_addr.c: In function ‘not_addr’:
+not_addr.c:21:60: warning: implicit declaration of function ‘is_alnum’ [-Wimplicit-function-declaration]
+     else if ((ch != '.') && (ch != '-') && (ch != '_') && !is_alnum(ch))
+                                                            ^~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_aton.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_name.c
+dns_name.c: In function ‘dns_name’:
+dns_name.c:35:7: warning: implicit declaration of function ‘dns_query’ [-Wimplicit-function-declaration]
+   n = dns_query(qbuf, T_PTR, &ans);
+       ^~~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_open.c
+dns_open.c: In function ‘dns_a’:
+dns_open.c:26:7: warning: implicit declaration of function ‘dns_query’ [-Wimplicit-function-declaration]
+   n = dns_query(host, T_A, &ans);
+       ^~~~~~~~~
+dns_open.c: In function ‘dns_open’:
+dns_open.c:78:20: warning: implicit declaration of function ‘dns_aton’ [-Wimplicit-function-declaration]
+   if ((addr.addr = dns_aton(host)) != INADDR_NONE
+                    ^~~~~~~~
+dns_open.c:96:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(sock);
+     ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dns_smtp.c
+dns_smtp.c: In function ‘dns_mx’:
+dns_smtp.c:25:7: warning: implicit declaration of function ‘dns_query’ [-Wimplicit-function-declaration]
+   n = dns_query(domain, T_MX, &ans);
+       ^~~~~~~~~
+dns_smtp.c: In function ‘dns_smtp’:
+dns_smtp.c:101:9: warning: implicit declaration of function ‘dns_aton’ [-Wimplicit-function-declaration]
+     if (dns_aton(host) != INADDR_NONE)
+         ^~~~~~~~
+dns_smtp.c:123:12: warning: implicit declaration of function ‘dns_open’ [-Wimplicit-function-declaration]
+     sock = dns_open(str, 25);
+            ^~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ansi.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_cat.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_cmp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_decode.c
+str_decode.c: In function ‘mm_getencode’:
+str_decode.c:89:10: warning: implicit declaration of function ‘str_ncmp’ [-Wimplicit-function-declaration]
+     if (!str_ncmp(str, "quoted-printable", 16))
+          ^~~~~~~~
+str_decode.c: In function ‘mm_getcharset’:
+str_decode.c:141:10: warning: implicit declaration of function ‘is_alnum’ [-Wimplicit-function-declaration]
+     if (!is_alnum(ch) && ch != '-')
+          ^~~~~~~~
+str_decode.c:152:8: warning: implicit declaration of function ‘str_cmp’ [-Wimplicit-function-declaration]
+   if (!str_cmp(charset, "iso-8859-1")) /* ���v�]�񤣥i�� */
+        ^~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_folder.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_fpath.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_from.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_has.c
+str_has.c: In function ‘str_has’:
+str_has.c:15:32: warning: implicit declaration of function ‘str_ncmp’ [-Wimplicit-function-declaration]
+     if ((!cc || cc == '/') && !str_ncmp(list, str, len))
+                                ^~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_hash.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_lower.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_lowest.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ncmp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ncpy.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_passwd.c
+str_passwd.c: In function ‘genpasswd’:
+str_passwd.c:26:11: warning: implicit declaration of function ‘getpid’ [-Wimplicit-function-declaration]
+   i = 9 * getpid();
+           ^~~~~~
+str_passwd.c: In function ‘chkpasswd’:
+str_passwd.c:52:3: warning: implicit declaration of function ‘str_ncpy’ [-Wimplicit-function-declaration]
+   str_ncpy(pwbuf, test, sizeof(pwbuf));
+   ^~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_stamp.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_str.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_sub.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_tail.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_time.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_trim.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c str_ttl.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c archiv32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c chrono32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hash32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c radix32.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_cat.c
+f_cat.c: In function ‘f_cat’:
+f_cat.c:14:5: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+     write(fd, msg, strlen(msg));
+     ^~~~~
+f_cat.c:15:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_cp.c
+f_cp.c: In function ‘f_cp’:
+f_cp.c:26:8: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+  ret = read(fsrc, src, BLK_SIZ);
+        ^~~~
+f_cp.c:29:16: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+       } while (write(fdst, src, ret) > 0);
+                ^~~~~
+f_cp.c:30:7: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+       close(fdst);
+       ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_img.c
+f_img.c: In function ‘f_img’:
+f_img.c:23:9: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+     if (read(fd, fpath, size) != size)
+         ^~~~
+f_img.c:30:3: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+   close(fd);
+   ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_ln.c
+f_ln.c: In function ‘f_ln’:
+f_ln.c:16:13: warning: implicit declaration of function ‘link’ [-Wimplicit-function-declaration]
+   if (ret = link(src, dst))
+             ^~~~
+f_ln.c:19:13: warning: implicit declaration of function ‘f_cp’ [-Wimplicit-function-declaration]
+       ret = f_cp(src, dst, O_EXCL);
+             ^~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_lock.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_map.c
+f_map.c: In function ‘f_map’:
+f_map.c:27:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_mode.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_mv.c
+f_mv.c: In function ‘f_mv’:
+f_mv.c:10:13: warning: implicit declaration of function ‘rename’ [-Wimplicit-function-declaration]
+   if (ret = rename(src, dst))
+             ^~~~~~
+f_mv.c:12:11: warning: implicit declaration of function ‘f_cp’ [-Wimplicit-function-declaration]
+     ret = f_cp(src, dst, O_TRUNC);
+           ^~~~
+f_mv.c:14:7: warning: implicit declaration of function ‘unlink’ [-Wimplicit-function-declaration]
+       unlink(src);
+       ^~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_new.c
+f_new.c: In function ‘f_new’:
+f_new.c:21:3: warning: implicit declaration of function ‘str_cat’ [-Wimplicit-function-declaration]
+   str_cat(fnew, fold, ".n");
+   ^~~~~~~
+f_new.c:39:25: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+       if (st.st_mtime < time(NULL) - 20 * 60) /* ���] 20 ���������ӳB�z�� */
+                         ^~~~
+f_new.c:40:2: warning: implicit declaration of function ‘unlink’ [-Wimplicit-function-declaration]
+  unlink(fnew);
+  ^~~~~~
+f_new.c:46:7: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+       sleep(5);
+       ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_path.c
+f_path.c: In function ‘usr_fpath’:
+f_path.c:83:3: warning: implicit declaration of function ‘str_ncpy’ [-Wimplicit-function-declaration]
+   str_ncpy(buf, user, sizeof(buf));
+   ^~~~~~~~
+f_path.c:84:3: warning: implicit declaration of function ‘str_lower’ [-Wimplicit-function-declaration]
+   str_lower(buf, buf);
+   ^~~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_rm.c
+f_rm.c: In function ‘rm_dir’:
+f_rm.c:37:2: warning: implicit declaration of function ‘unlink’ [-Wimplicit-function-declaration]
+  unlink(buf);
+  ^~~~~~
+f_rm.c:43:10: warning: implicit declaration of function ‘rmdir’ [-Wimplicit-function-declaration]
+   return rmdir(buf);
+          ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c f_suck.c
+f_suck.c: In function ‘f_suck’:
+f_suck.c:20:20: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+     while ((size = read(fd, fpath, BLK_SIZ)) > 0)
+                    ^~~~
+f_suck.c:24:5: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+     close(fd);
+     ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c mak_dirs.c
+mak_dirs.c: In function ‘mak_links’:
+mak_dirs.c:58:5: warning: implicit declaration of function ‘symlink’ [-Wimplicit-function-declaration]
+     symlink(".", fpath);
+     ^~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_add.c
+rec_add.c: In function ‘rec_add’:
+rec_add.c:16:3: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+   write(fd, data, size);
+   ^~~~~
+rec_add.c:18:3: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+   close(fd);
+   ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_bot.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_num.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_del.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_get.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_ins.c
+rec_ins.c: In function ‘rec_ins’:
+rec_ins.c:26:3: warning: implicit declaration of function ‘f_exlock’ [-Wimplicit-function-declaration]
+   f_exlock(fd);
+   ^~~~~~~~
+rec_ins.c:52:3: warning: implicit declaration of function ‘f_unlock’ [-Wimplicit-function-declaration]
+   f_unlock(fd);
+   ^~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_put.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_ref.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rec_sync.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hdr_fpath.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c hdr_stamp.c
+hdr_stamp.c: In function ‘hdr_stamp’:
+hdr_stamp.c:97:12: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]
+   chrono = time(0);
+            ^~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c shm.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c splay.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c acl_has.c
+acl_has.c: In function ‘acl_has’:
+acl_has.c:60:5: warning: implicit declaration of function ‘str_lower’ [-Wimplicit-function-declaration]
+     str_lower(filter, filter);  /* lkchu.981201: lower-case string */
+     ^~~~~~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c rfc2047.c
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c xwrite.c
+xwrite.c: In function ‘xwrite’:
+xwrite.c:11:10: warning: implicit declaration of function ‘write’ [-Wimplicit-function-declaration]
+     cc = write(fd, data, size);
+          ^~~~~
+gcc -O2 -pipe -fomit-frame-pointer -Wunused -I../include -c dl_lib.c
+ar rv libdao.a is_alnum.o is_alpha.o not_addr.o dns.o dns_aton.o dns_name.o dns_open.o dns_smtp.o str_ansi.o str_cat.o str_cmp.o str_decode.o str_folder.o str_fpath.o str_from.o str_has.o str_hash.o str_lower.o str_lowest.o str_ncmp.o str_ncpy.o str_passwd.o str_stamp.o str_str.o str_sub.o str_tail.o str_time.o str_trim.o str_ttl.o archiv32.o chrono32.o hash32.o radix32.o f_cat.o f_cp.o f_img.o f_ln.o f_lock.o f_map.o f_mode.o f_mv.o f_new.o f_path.o f_rm.o f_suck.o mak_dirs.o rec_add.o rec_bot.o rec_num.o rec_del.o rec_get.o rec_ins.o rec_put.o rec_ref.o rec_sync.o hdr_fpath.o hdr_stamp.o shm.o splay.o acl_has.o rfc2047.o xwrite.o dl_lib.o
+ar: creating libdao.a
+a - is_alnum.o
+a - is_alpha.o
+a - not_addr.o
+a - dns.o
+a - dns_aton.o
+a - dns_name.o
+a - dns_open.o
+a - dns_smtp.o
+a - str_ansi.o
+a - str_cat.o
+a - str_cmp.o
+a - str_decode.o
+a - str_folder.o
+a - str_fpath.o
+a - str_from.o
+a - str_has.o
+a - str_hash.o
+a - str_lower.o
+a - str_lowest.o
+a - str_ncmp.o
+a - str_ncpy.o
+a - str_passwd.o
+a - str_stamp.o
+a - str_str.o
+a - str_sub.o
+a - str_tail.o
+a - str_time.o
+a - str_trim.o
+a - str_ttl.o
+a - archiv32.o
+a - chrono32.o
+a - hash32.o
+a - radix32.o
+a - f_cat.o
+a - f_cp.o
+a - f_img.o
+a - f_ln.o
+a - f_lock.o
+a - f_map.o
+a - f_mode.o
+a - f_mv.o
+a - f_new.o
+a - f_path.o
+a - f_rm.o
+a - f_suck.o
+a - mak_dirs.o
+a - rec_add.o
+a - rec_bot.o
+a - rec_num.o
+a - rec_del.o
+a - rec_get.o
+a - rec_ins.o
+a - rec_put.o
+a - rec_ref.o
+a - rec_sync.o
+a - hdr_fpath.o
+a - hdr_stamp.o
+a - shm.o
+a - splay.o
+a - acl_has.o
+a - rfc2047.o
+a - xwrite.o
+a - dl_lib.o
+ranlib libdao.a
+make[1]: Leaving directory '/home/bbs/src/lib'
+make[1]: Entering directory '/home/bbs/src/daemon'
+make[2]: Entering directory '/home/bbs/src/daemon'
+gcc -o bguard bguard.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bhttpd bhttpd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+bhttpd.c: In function ‘main’:
+bhttpd.c:3948:3: warning: implicit declaration of function ‘dns_init’ [-Wimplicit-function-declaration]
+   dns_init();
+   ^~~~~~~~
+gcc -o bmtad bmtad.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+bmtad.c: In function ‘hht_look’:
+bmtad.c:779:15: warning: implicit declaration of function ‘dns_name’ [-Wimplicit-function-declaration]
+       hflag = dns_name((char *)addr, host);
+               ^~~~~~~~
+bmtad.c: In function ‘is_forge’:
+bmtad.c:870:5: warning: implicit declaration of function ‘dns_mx’ [-Wimplicit-function-declaration]
+     dns_mx(host, mxlist);
+     ^~~~~~
+bmtad.c:871:21: warning: implicit declaration of function ‘dns_a’ [-Wimplicit-function-declaration]
+     if (!*mxlist && dns_a(host) == INADDR_NONE)
+                     ^~~~~
+bmtad.c: In function ‘main’:
+bmtad.c:3659:3: warning: implicit declaration of function ‘dns_init’ [-Wimplicit-function-declaration]
+   dns_init();
+   ^~~~~~~~
+gcc -o bnntpd bnntpd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+bnntpd.c: In function ‘main’:
+bnntpd.c:1258:3: warning: implicit declaration of function ‘dns_init’ [-Wimplicit-function-declaration]
+   dns_init();
+   ^~~~~~~~
+gcc -o bpop3d bpop3d.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o gemd gemd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o xchatd xchatd.c -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+xchatd.c: In function ‘login_user’:
+xchatd.c:1870:3: warning: implicit declaration of function ‘dns_name’ [-Wimplicit-function-declaration]
+   dns_name(cu->rhost, cu->ibuf);
+   ^~~~~~~~
+xchatd.c: In function ‘servo_daemon’:
+xchatd.c:3531:3: warning: implicit declaration of function ‘dns_init’ [-Wimplicit-function-declaration]
+   dns_init();
+   ^~~~~~~~
+make[2]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Entering directory '/home/bbs/src/innbbsd'
+make[2]: Entering directory '/home/bbs/src/innbbsd'
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o channel.o channel.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o bbslib.o bbslib.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o convcode.o convcode.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o inntobbs.o inntobbs.c
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o rec_article.o rec_article.c
+rec_article.c: In function ‘cancel_article’:
+rec_article.c:366:36: warning: implicit declaration of function ‘search_issuer’ [-Wimplicit-function-declaration]
+  if (strcmp(xfrom, cancelfrom) && !search_issuer(FROM, NULL))
+                                    ^~~~~~~~~~~~~
+rec_article.c: In function ‘receive_article’:
+rec_article.c:497:2: warning: implicit declaration of function ‘gb2b5’ [-Wimplicit-function-declaration]
+  gb2b5(BODY);
+  ^~~~~
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o nocem.o nocem.c
+nocem.c: In function ‘NCMupdate’:
+nocem.c:77:3: warning: implicit declaration of function ‘read_ncmperm’ [-Wimplicit-function-declaration]
+   read_ncmperm();
+   ^~~~~~~~~~~~
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o history.o history.c
+gcc -o innbbsd channel.o bbslib.o convcode.o inntobbs.o rec_article.o nocem.o history.o  -L../lib -ldao
+gcc -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g   -c -o bbslink.o bbslink.c
+bbslink.c: In function ‘sover_post’:
+bbslink.c:437:5: warning: implicit declaration of function ‘b52gb’ [-Wimplicit-function-declaration]
+     b52gb(BODY);
+     ^~~~~
+gcc -o bbslink bbslink.o bbslib.o convcode.o inntobbs.o rec_article.o nocem.o history.o  -L../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Entering directory '/home/bbs/src/maple'
+make[2]: Entering directory '/home/bbs/src/maple'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o acct.o acct.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o bbsd.o bbsd.c
+bbsd.c: In function ‘start_daemon’:
+bbsd.c:1295:3: warning: implicit declaration of function ‘dns_init’ [-Wimplicit-function-declaration]
+   dns_init();
+   ^~~~~~~~
+bbsd.c: In function ‘main’:
+bbsd.c:1508:3: warning: implicit declaration of function ‘sem_init’ [-Wimplicit-function-declaration]
+   sem_init();
+   ^~~~~~~~
+bbsd.c:1560:5: warning: implicit declaration of function ‘dns_name’ [-Wimplicit-function-declaration]
+     dns_name((char *) &sin.sin_addr, fromhost);
+     ^~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o bmw.o bmw.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o board.o board.c
+board.c: In function ‘XoAuthor’:
+board.c:1908:7: warning: implicit declaration of function ‘munmap’ [-Wimplicit-function-declaration]
+       munmap(fimage, fsize);
+       ^~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o cache.o cache.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o edit.o edit.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o favor.o favor.c
+favor.c: In function ‘mf_browse’:
+favor.c:503:8: warning: variable ‘brd’ set but not used [-Wunused-but-set-variable]
+   BRD *brd;
+        ^~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o gem.o gem.c
+gem.c: In function ‘gem_delete’:
+gem.c:906:7: warning: variable ‘xmode’ set but not used [-Wunused-but-set-variable]
+   int xmode;
+       ^~~~~
+gem.c: In function ‘gem_extend’:
+gem.c:1085:9: warning: variable ‘dir’ set but not used [-Wunused-but-set-variable]
+   char *dir, fpath[64], gpath[64];
+         ^~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o mail.o mail.c
+mail.c: In function ‘bsmtp’:
+mail.c:196:10: warning: implicit declaration of function ‘dns_smtp’ [-Wimplicit-function-declaration]
+   sock = dns_smtp(str);
+          ^~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o menu.o menu.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o more.o more.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pal.o pal.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o post.o post.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o talk.o talk.c
+talk.c: In function ‘talk_speak’:
+talk.c:745:6: warning: implicit declaration of function ‘DL_func’ [-Wimplicit-function-declaration]
+  if (DL_func("bin/bwboard.so:vaBWboard", fd, 1) == -2)
+      ^~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o ulist.o ulist.c
+ulist.c: In function ‘ulist_body’:
+ulist.c:245:7: warning: variable ‘seesupercloak’ set but not used [-Wunused-but-set-variable]
+   int seesupercloak;
+       ^~~~~~~~~~~~~
+ulist.c:243:30: warning: variable ‘seecloak’ set but not used [-Wunused-but-set-variable]
+   int num, max, tail, sysop, seecloak, slot;
+                              ^~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o user.o user.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o visio.o visio.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o window.o window.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o xover.o xover.c
+xover.c: In function ‘xo_tag’:
+xover.c:459:3: warning: implicit declaration of function ‘munmap’ [-Wimplicit-function-declaration]
+   munmap(fimage, fsize);
+   ^~~~~~
+xover.c: In function ‘xo_help’:
+xover.c:1786:3: warning: implicit declaration of function ‘DL_func’ [-Wimplicit-function-declaration]
+   DL_func("bin/help.so:vaHelp", path);
+   ^~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o xpost.o xpost.c
+xpost.c: In function ‘XoXpost’:
+xpost.c:145:3: warning: implicit declaration of function ‘munmap’ [-Wimplicit-function-declaration]
+   munmap(fimage, fsize);
+   ^~~~~~
+gcc -o bbsd acct.o bbsd.o bmw.o board.o cache.o edit.o favor.o gem.o mail.o menu.o more.o pal.o post.o talk.o ulist.o user.o visio.o window.o xover.o xpost.o -L../lib -ldao -lcrypt -lresolv -ldl -rdynamic
+make[2]: Leaving directory '/home/bbs/src/maple'
+make[1]: Leaving directory '/home/bbs/src/maple'
+make[1]: Entering directory '/home/bbs/src/so'
+make[2]: Entering directory '/home/bbs/src/so'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c admutil.c
+ld -s -G admutil.o -o admutil.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c aloha.c
+ld -s -G aloha.o -o aloha.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bank.c
+ld -s -G bank.o -o bank.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c chat.c
+ld -s -G chat.o -o chat.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c help.c
+ld -s -G help.o -o help.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c innbbs.c
+ld -s -G innbbs.o -o innbbs.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c manage.c
+ld -s -G manage.o -o manage.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c newbrd.c
+newbrd.c: In function ‘nbrd_add’:
+newbrd.c:256:35: warning: implicit declaration of function ‘valid_brdname’ [-Wimplicit-function-declaration]
+     if (brd_bno(brdname) >= 0 || !valid_brdname(brdname))
+                                   ^~~~~~~~~~~~~
+ld -s -G newbrd.o -o newbrd.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c song.c
+ld -s -G song.o -o song.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c vote.c
+ld -s -G vote.o -o vote.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c xyz.c
+ld -s -G xyz.o -o xyz.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c calendar.c
+ld -s -G calendar.o -o calendar.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c classtable.c
+ld -s -G classtable.o -o classtable.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c credit.c
+ld -s -G credit.o -o credit.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c todo.c
+ld -s -G todo.o -o todo.so -L../lib -ldao
+rm aloha.o credit.o xyz.o bank.o todo.o help.o chat.o song.o innbbs.o vote.o classtable.o newbrd.o admutil.o manage.o calendar.o
+make[2]: Leaving directory '/home/bbs/src/so'
+make[1]: Leaving directory '/home/bbs/src/so'
+make[1]: Entering directory '/home/bbs/src/game'
+make[2]: Entering directory '/home/bbs/src/game'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bar.c
+ld -s -G bar.o -o bar.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bingo.c
+ld -s -G bingo.o -o bingo.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bj.c
+ld -s -G bj.o -o bj.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c bwboard.c
+ld -s -G bwboard.o -o bwboard.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c chessmj.c
+chessmj.c: In function ‘main_chessmj’:
+chessmj.c:586:11: warning: variable ‘x’ set but not used [-Wunused-but-set-variable]
+   int jp, x, xx, ch, z;
+           ^
+chessmj.c:582:7: warning: variable ‘listen’ set but not used [-Wunused-but-set-variable]
+   int listen;   /* 1:ť�P 0:�S��ť�P */
+       ^~~~~~
+ld -s -G chessmj.o -o chessmj.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c dice.c
+ld -s -G dice.o -o dice.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c dragon.c
+ld -s -G dragon.o -o dragon.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c fantan.c
+ld -s -G fantan.o -o fantan.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c gp.c
+ld -s -G gp.o -o gp.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c guessnum.c
+ld -s -G guessnum.o -o guessnum.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c km.c
+ld -s -G km.o -o km.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c liteon.c
+ld -s -G liteon.o -o liteon.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c marie.c
+ld -s -G marie.o -o marie.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c mine.c
+ld -s -G mine.o -o mine.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c nine.c
+ld -s -G nine.o -o nine.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c pushbox.c
+ld -s -G pushbox.o -o pushbox.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c race.c
+ld -s -G race.o -o race.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c recall.c
+ld -s -G recall.o -o recall.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c reversi.c
+reversi.c: In function ‘do_count’:
+reversi.c:220:1: warning: type of ‘x’ defaults to ‘int’ [-Wimplicit-int]
+ do_count(x, y, tile)
+ ^~~~~~~~
+reversi.c:220:1: warning: type of ‘y’ defaults to ‘int’ [-Wimplicit-int]
+reversi.c:220:1: warning: type of ‘tile’ defaults to ‘int’ [-Wimplicit-int]
+reversi.c: In function ‘do_eat’:
+reversi.c:366:1: warning: type of ‘x’ defaults to ‘int’ [-Wimplicit-int]
+ do_eat(x, y, tile)
+ ^~~~~~
+reversi.c:366:1: warning: type of ‘y’ defaults to ‘int’ [-Wimplicit-int]
+reversi.c:366:1: warning: type of ‘tile’ defaults to ‘int’ [-Wimplicit-int]
+ld -s -G reversi.o -o reversi.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c seven.c
+ld -s -G seven.o -o seven.so -L../lib -ldao
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g -c tetris.c
+ld -s -G tetris.o -o tetris.so -L../lib -ldao
+rm dice.o mine.o km.o race.o gp.o fantan.o seven.o liteon.o pushbox.o nine.o tetris.o guessnum.o bwboard.o recall.o bar.o chessmj.o bj.o dragon.o bingo.o reversi.o marie.o
+make[2]: Leaving directory '/home/bbs/src/game'
+make[1]: Leaving directory '/home/bbs/src/game'
+make[1]: Entering directory '/home/bbs/src/pip'
+make[2]: Entering directory '/home/bbs/src/pip'
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_basic.o pip_basic.c
+pip_basic.c: In function ‘pip_basic_feed’:
+pip_basic.c:54:2: warning: implicit declaration of function ‘show_feed_pic’ [-Wimplicit-function-declaration]
+  show_feed_pic(11);
+  ^~~~~~~~~~~~~
+pip_basic.c: In function ‘pip_basic_takeshower’:
+pip_basic.c:250:5: warning: implicit declaration of function ‘show_usual_pic’ [-Wimplicit-function-declaration]
+     show_usual_pic(1);
+     ^~~~~~~~~~~~~~
+pip_basic.c: In function ‘pip_basic_takerest’:
+pip_basic.c:271:3: warning: implicit declaration of function ‘count_tired’ [-Wimplicit-function-declaration]
+   count_tired(5, 20, 1, 100, 0); /* ��_�h�� */
+   ^~~~~~~~~~~
+pip_basic.c: In function ‘pip_money’:
+pip_basic.c:327:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(6, 18);
+   ^~~~~~~~~
+pip_basic.c:339:7: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   if (ians(11, 0, buf) == 'y')
+       ^~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_ending.o pip_ending.c
+pip_ending.c: In function ‘pip_ending_grade’:
+pip_ending.c:640:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(1, 23);
+   ^~~~~~~~~
+pip_ending.c: In function ‘pip_ending_screen’:
+pip_ending.c:684:3: warning: implicit declaration of function ‘show_ending_pic’ [-Wimplicit-function-declaration]
+   show_ending_pic(0);
+   ^~~~~~~~~~~~~~~
+pip_ending.c:690:3: warning: implicit declaration of function ‘pip_query_self’ [-Wimplicit-function-declaration]
+   pip_query_self();
+   ^~~~~~~~~~~~~~
+pip_ending.c:693:3: warning: implicit declaration of function ‘pipdie’ [-Wimplicit-function-declaration]
+   pipdie("\033[1;31m�C�������o..\033[m  ", 3);
+   ^~~~~~
+pip_ending.c: In function ‘pip_marriage_offer’:
+pip_ending.c:717:7: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   if (ians(b_lines - 1, 0, buf) == 'y')
+       ^~~~
+pip_ending.c: In function ‘pip_meet_smith’:
+pip_ending.c:919:5: warning: implicit declaration of function ‘pip_weapon_wear’ [-Wimplicit-function-declaration]
+     pip_weapon_wear(0, randnum);
+     ^~~~~~~~~~~~~~~
+pip_ending.c: In function ‘pip_meet_angel’:
+pip_ending.c:974:3: warning: implicit declaration of function ‘show_system_pic’ [-Wimplicit-function-declaration]
+   show_system_pic(0);
+   ^~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_fight.o pip_fight.c
+pip_fight.c: In function ‘pip_check_levelup’:
+pip_fight.c:83:7: warning: implicit declaration of function ‘pip_quest_new’ [-Wimplicit-function-declaration]
+       pip_quest_new();
+       ^~~~~~~~~~~~~
+pip_fight.c: In function ‘pip_skill_doing_menu’:
+pip_fight.c:784:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(7, 16);
+   ^~~~~~~~~
+pip_fight.c:814:2: warning: implicit declaration of function ‘show_badman_pic’ [-Wimplicit-function-declaration]
+  show_badman_pic(m.pic);
+  ^~~~~~~~~~~~~~~
+pip_fight.c:923:3: warning: implicit declaration of function ‘show_fight_pic’ [-Wimplicit-function-declaration]
+   show_fight_pic(p[ch].pic);
+   ^~~~~~~~~~~~~~
+pip_fight.c: In function ‘pip_vs_ending’:
+pip_fight.c:1499:5: warning: implicit declaration of function ‘pipdie’ [-Wimplicit-function-declaration]
+     pipdie("\033[1;31m�԰����Q�����F...\033[m  ", 1);
+     ^~~~~~
+pip_fight.c: In function ‘pip_vs_man’:
+pip_fight.c:1648:13: warning: implicit declaration of function ‘pip_basic_feed’ [-Wimplicit-function-declaration]
+  d_nodone = pip_basic_feed(); /* feed ���Ǧ^ 0 ���ܦY���F�A�Ǧ^ 1 ���ܩ��S�Y */
+             ^~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_item.o pip_item.c
+pip_item.c: In function ‘pip_buy_item’:
+pip_item.c:74:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(6, 18);
+   ^~~~~~~~~
+pip_item.c:91:16: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+       choice = ians(b_lines - 2, 0, buf) - '0';
+                ^~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_job.o pip_job.c
+pip_job.c: In function ‘pip_job_function’:
+pip_job.c:51:3: warning: implicit declaration of function ‘count_tired’ [-Wimplicit-function-declaration]
+   count_tired(tired_prob, tired_base, 1, 100, 1); /* �W�[�h�һP�~�֦��� */
+   ^~~~~~~~~~~
+pip_job.c:57:3: warning: implicit declaration of function ‘show_job_pic’ [-Wimplicit-function-declaration]
+   show_job_pic(pic);
+   ^~~~~~~~~~~~
+pip_job.c: In function ‘pip_job_workB’:
+pip_job.c:170:5: warning: implicit declaration of function ‘pip_learn_skill’ [-Wimplicit-function-declaration]
+     pip_learn_skill(7);
+     ^~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_menu.o pip_menu.c
+pip_menu.c: In function ‘pip_time_update’:
+pip_menu.c:268:7: warning: implicit declaration of function ‘count_tired’ [-Wimplicit-function-declaration]
+       count_tired(1, 7, 0, 100, 0); /* ��_�h�� */
+       ^~~~~~~~~~~
+pip_menu.c:275:7: warning: implicit declaration of function ‘pip_write_file’ [-Wimplicit-function-declaration]
+       pip_write_file();   /* �۰��x�s */
+       ^~~~~~~~~~~~~~
+pip_menu.c:278:7: warning: implicit declaration of function ‘show_basic_pic’ [-Wimplicit-function-declaration]
+       show_basic_pic(20);  /* �ͤ�ּ� */
+       ^~~~~~~~~~~~~~
+pip_menu.c:283:9: warning: implicit declaration of function ‘pip_race_main’ [-Wimplicit-function-declaration]
+         pip_race_main();
+         ^~~~~~~~~~~~~
+pip_menu.c:287:9: warning: implicit declaration of function ‘pip_ending_screen’ [-Wimplicit-function-declaration]
+         pip_ending_screen();
+         ^~~~~~~~~~~~~~~~~
+pip_menu.c:299:5: warning: implicit declaration of function ‘pip_marriage_offer’ [-Wimplicit-function-declaration]
+     pip_marriage_offer(); /* �ӤH�ӨD�B */
+     ^~~~~~~~~~~~~~~~~~
+pip_menu.c:301:5: warning: implicit declaration of function ‘pip_meet_divine’ [-Wimplicit-function-declaration]
+     pip_meet_divine();  /* �H���J��e�R�v */
+     ^~~~~~~~~~~~~~~
+pip_menu.c:303:5: warning: implicit declaration of function ‘pip_meet_sysop’ [-Wimplicit-function-declaration]
+     pip_meet_sysop();  /* �H���J�� SYSOP */
+     ^~~~~~~~~~~~~~
+pip_menu.c:305:5: warning: implicit declaration of function ‘pip_meet_smith’ [-Wimplicit-function-declaration]
+     pip_meet_smith();  /* �H���J���K�K */
+     ^~~~~~~~~~~~~~
+pip_menu.c: In function ‘pip_refresh_screen’:
+pip_menu.c:383:5: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+     clrfromto(0, 4);
+     ^~~~~~~~~
+pip_menu.c:494:5: warning: implicit declaration of function ‘pipdie’ [-Wimplicit-function-declaration]
+     pipdie("\033[1;31m�z��䦺�F\033[m  ", 1);
+     ^~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_pk.o pip_pk.c
+pip_pk.c: In function ‘pip_ptmp_new’:
+pip_pk.c:60:3: warning: implicit declaration of function ‘sem_lock’ [-Wimplicit-function-declaration]
+   sem_lock(BSEM_ENTER);
+   ^~~~~~~~
+pip_pk.c: In function ‘pip_ptmp_show’:
+pip_pk.c:177:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(7, 16);
+   ^~~~~~~~~
+pip_pk.c: In function ‘pip_pk_showing’:
+pip_pk.c:266:3: warning: implicit declaration of function ‘show_badman_pic’ [-Wimplicit-function-declaration]
+   show_badman_pic(pic);
+   ^~~~~~~~~~~~~~~
+pip_pk.c: In function ‘pip_pk_combat’:
+pip_pk.c:336:5: warning: implicit declaration of function ‘show_fight_pic’ [-Wimplicit-function-declaration]
+     show_fight_pic(1);
+     ^~~~~~~~~~~~~~
+pip_pk.c: In function ‘pip_pk_menu’:
+pip_pk.c:723:8: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   ch = ians(b_lines, 0, "�� �p����� 1)�W�իݵo 2)�U�D�Ԯ� [Q]���} ");
+        ^~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_play.o pip_play.c
+pip_play.c: In function ‘pip_play_stroll’:
+pip_play.c:28:3: warning: implicit declaration of function ‘count_tired’ [-Wimplicit-function-declaration]
+   count_tired(3, 3, 1, 100, 0); /* �W�[�h�� */
+   ^~~~~~~~~~~
+pip_play.c:39:5: warning: implicit declaration of function ‘show_play_pic’ [-Wimplicit-function-declaration]
+     show_play_pic(1);
+     ^~~~~~~~~~~~~
+pip_play.c: In function ‘pip_play_outing’:
+pip_play.c:220:7: warning: implicit declaration of function ‘pip_meet_angel’ [-Wimplicit-function-declaration]
+       pip_meet_angel();
+       ^~~~~~~~~~~~~~
+pip_play.c: In function ‘guess_pip_lose’:
+pip_play.c:287:3: warning: implicit declaration of function ‘show_guess_pic’ [-Wimplicit-function-declaration]
+   show_guess_pic(2);
+   ^~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_prac.o pip_prac.c
+pip_prac.c: In function ‘pip_practice_function’:
+pip_prac.c:135:7: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   if (ians(b_lines - 2, 0, buf) == 'n')
+       ^~~~
+pip_prac.c:142:3: warning: implicit declaration of function ‘count_tired’ [-Wimplicit-function-declaration]
+   count_tired(4, 5, 1, 100, 1);
+   ^~~~~~~~~~~
+pip_prac.c:164:5: warning: implicit declaration of function ‘show_practice_pic’ [-Wimplicit-function-declaration]
+     show_practice_pic(pic1);
+     ^~~~~~~~~~~~~~~~~
+pip_prac.c: In function ‘pip_practice_classA’:
+pip_prac.c:207:5: warning: implicit declaration of function ‘pip_learn_skill’ [-Wimplicit-function-declaration]
+     pip_learn_skill(-7);
+     ^~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_quest.o pip_quest.c
+pip_quest.c: In function ‘pip_quest_201’:
+pip_quest.c:136:7: warning: implicit declaration of function ‘pip_vs_man’ [-Wimplicit-function-declaration]
+   if (pip_vs_man(m, 0))  /* �p����ԼĤH (�ɥΪZ�N�j�|) */
+       ^~~~~~~~~~
+pip_quest.c: In function ‘pip_quest_202’:
+pip_quest.c:165:7: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   if (ians(b_lines - 1, 0, "�Q�j�c�H�ݰ_�ӶW�j�A�z�n�������(Y/N)�H[Y] ") != 'n')
+       ^~~~
+pip_quest.c: In function ‘pip_quest_query’:
+pip_quest.c:320:3: warning: implicit declaration of function ‘show_quest_pic’ [-Wimplicit-function-declaration]
+   show_quest_pic(quest);
+   ^~~~~~~~~~~~~~
+pip_quest.c: In function ‘pip_quest_done’:
+pip_quest.c:357:7: warning: implicit declaration of function ‘pip_levelup’ [-Wimplicit-function-declaration]
+       pip_levelup(key);
+       ^~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_race.o pip_race.c
+pip_race.c: In function ‘pip_race_eventA’:
+pip_race.c:66:9: warning: implicit declaration of function ‘pip_vs_man’ [-Wimplicit-function-declaration]
+     if (pip_vs_man(racemanlist[player[i]], 0)) /* �p����ԼĤH */
+         ^~~~~~~~~~
+pip_race.c: In function ‘pip_race_eventD’:
+pip_race.c:132:15: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   winorlost = ians(b_lines - 1, 0, "�z�Q�N���ؤf�������H0)�a�` 1)�� 2)�� 3)�W 4)�� [0] ");
+               ^~~~
+pip_race.c: In function ‘pip_race_main’:
+pip_race.c:227:3: warning: implicit declaration of function ‘show_resultshow_pic’ [-Wimplicit-function-declaration]
+   show_resultshow_pic(0);
+   ^~~~~~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_royal.o pip_royal.c
+pip_royal.c: In function ‘pip_go_palace_screen’:
+pip_royal.c:49:3: warning: implicit declaration of function ‘show_palace_pic’ [-Wimplicit-function-declaration]
+   show_palace_pic(0);
+   ^~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_stuff.o pip_stuff.c
+pip_stuff.c: In function ‘pip_write_backup’:
+pip_stuff.c:63:3: warning: implicit declaration of function ‘show_basic_pic’ [-Wimplicit-function-declaration]
+   show_basic_pic(101);
+   ^~~~~~~~~~~~~~
+pip_stuff.c:65:8: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   ch = ians(b_lines - 2, 0, "�x�s [1] �i�פ@ [2] �i�פG [3] �i�פT [Q] ���G[Q] ") - '0';
+        ^~~~
+pip_stuff.c: In function ‘pipdie’:
+pip_stuff.c:152:5: warning: implicit declaration of function ‘show_die_pic’ [-Wimplicit-function-declaration]
+     show_die_pic(1);
+     ^~~~~~~~~~~~
+pip_stuff.c: In function ‘pip_see_doctor’:
+pip_stuff.c:264:5: warning: implicit declaration of function ‘show_special_pic’ [-Wimplicit-function-declaration]
+     show_special_pic(1);
+     ^~~~~~~~~~~~~~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_visio.o pip_visio.c
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip_weapon.o pip_weapon.c
+pip_weapon.c: In function ‘pip_weapon_doing_menu’:
+pip_weapon.c:121:3: warning: implicit declaration of function ‘show_weapon_pic’ [-Wimplicit-function-declaration]
+   show_weapon_pic(0);
+   ^~~~~~~~~~~~~~~
+pip_weapon.c:138:11: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+       n = ians(b_lines - 2, 1, buf) - '0';
+           ^~~~
+gcc -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include -g   -c -o pip.o pip.c
+pip.c: In function ‘pip_live_again’:
+pip.c:65:3: warning: implicit declaration of function ‘pip_write_file’ [-Wimplicit-function-declaration]
+   pip_write_file();
+   ^~~~~~~~~~~~~~
+pip.c: In function ‘pip_apply’:
+pip.c:84:12: warning: implicit declaration of function ‘ians’ [-Wimplicit-function-declaration]
+   d.sex = (ians(4, 3, "�ʧO�G(1) �p������  (2) �p������ (1/2)�H[1] ") == '2') ? 2 : 1;
+            ^~~~
+pip.c:95:3: warning: implicit declaration of function ‘show_basic_pic’ [-Wimplicit-function-declaration]
+   show_basic_pic(0);
+   ^~~~~~~~~~~~~~
+pip.c:144:3: warning: implicit declaration of function ‘pip_learn_skill’ [-Wimplicit-function-declaration]
+   pip_learn_skill(0);
+   ^~~~~~~~~~~~~~~
+pip.c: In function ‘main_pip’:
+pip.c:188:5: warning: implicit declaration of function ‘show_system_pic’ [-Wimplicit-function-declaration]
+     show_system_pic(11);
+     ^~~~~~~~~~~~~~~
+pip.c:202:12: warning: implicit declaration of function ‘pip_read_backup’ [-Wimplicit-function-declaration]
+       if (!pip_read_backup())
+            ^~~~~~~~~~~~~~~
+pip.c:211:7: warning: implicit declaration of function ‘pip_read_file’ [-Wimplicit-function-declaration]
+       pip_read_file(cuser.userid, &d);
+       ^~~~~~~~~~~~~
+pip.c:230:3: warning: implicit declaration of function ‘clrfromto’ [-Wimplicit-function-declaration]
+   clrfromto(5, 18);
+   ^~~~~~~~~
+pip.c:236:3: warning: implicit declaration of function ‘pip_main_menu’ [-Wimplicit-function-declaration]
+   pip_main_menu();
+   ^~~~~~~~~~~~~
+ld -s -G pip_basic.o pip_ending.o pip_fight.o pip_item.o pip_job.o pip_menu.o pip_pk.o pip_play.o pip_prac.o pip_quest.o pip_race.o pip_royal.o pip_stuff.o pip_visio.o pip_weapon.o pip.o -o pip.so -L../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/pip'
+make[1]: Leaving directory '/home/bbs/src/pip'
+make[1]: Entering directory '/home/bbs/src/util'
+make[2]: Entering directory '/home/bbs/src/util'
+gcc -o account account.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o acl-sort acl-sort.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bbsmail bbsmail.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o bquota bquota.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o brdmail brdmail.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o camera camera.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o counter counter.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o expire expire.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o gem-index gem-index.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o hdr-dump hdr-dump.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o mailpost mailpost.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o outgo outgo.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o poststat poststat.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o reaper reaper.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o redir redir.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o setperm setperm.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o setusr setusr.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o showACCT showACCT.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o showBRD showBRD.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o showDIR showDIR.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o showUSR showUSR.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o topgem topgem.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o topsong topsong.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+gcc -o topusr topusr.c -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -g -L../lib -ldao -lcrypt -lresolv
+make[2]: Leaving directory '/home/bbs/src/util'
+make[1]: Leaving directory '/home/bbs/src/util'
+make[1]: Entering directory '/home/bbs/src/util/backup'
+make[2]: Entering directory '/home/bbs/src/util/backup'
+gcc -o backupacct backupacct.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o backupbrd backupbrd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o backupgem backupgem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o backupoth backupoth.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o backupusr backupusr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o restoreacct restoreacct.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o restorebrd restorebrd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o restoregem restoregem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o restoreusr restoreusr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/util/backup'
+make[1]: Leaving directory '/home/bbs/src/util/backup'
+make[1]: Entering directory '/home/bbs/src/util/tran'
+make[2]: Entering directory '/home/bbs/src/util/tran'
+gcc -o brd2gem brd2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o transacct transacct.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o transbrd transbrd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2bmw ats2bmw.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2brd ats2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2gem ats2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2mf ats2mf.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2pal ats2pal.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o ats2usr ats2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o cola2brd cola2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o cola2gem cola2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o cola2post cola2post.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o cola2usr cola2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o fb2brd fb2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o fb2gem fb2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o fb2pal fb2pal.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o fb2usr fb2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o mag2brd mag2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o mag2gem mag2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o mag2usr mag2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o snap2usr snap2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o snap2brd snap2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o sob2brd sob2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o sob2gem sob2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o sob2pal sob2pal.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o sob2usr sob2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2bmw wd2bmw.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2brd wd2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2gem wd2gem.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2list wd2list.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2mf wd2mf.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2pal wd2pal.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2pip wd2pip.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o wd2usr wd2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o windtop2brd windtop2brd.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o windtop2mf windtop2mf.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o windtop2pip windtop2pip.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o windtop2usr windtop2usr.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/util/tran'
+make[1]: Leaving directory '/home/bbs/src/util/tran'
+make[1]: Entering directory '/home/bbs/src/util/uno'
+make[2]: Entering directory '/home/bbs/src/util/uno'
+gcc -o collect_uno collect_uno.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o conflict_uno conflict_uno.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+gcc -o fix_uno fix_uno.c -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -s -L../../lib -ldao
+make[2]: Leaving directory '/home/bbs/src/util/uno'
+make[1]: Leaving directory '/home/bbs/src/util/uno'
+make[1]: Entering directory '/home/bbs/src/daemon'
+install -m 0700 bguard bhttpd bmtad bnntpd bpop3d gemd xchatd /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/daemon'
+make[1]: Entering directory '/home/bbs/src/innbbsd'
+install -m 0700 innbbsd bbslink /home/bbs/innd
+make[1]: Leaving directory '/home/bbs/src/innbbsd'
+make[1]: Entering directory '/home/bbs/src/maple'
+install -m 0700 bbsd /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/maple'
+make[1]: Entering directory '/home/bbs/src/so'
+install -m 0700 admutil.so aloha.so bank.so chat.so help.so innbbs.so manage.so newbrd.so song.so vote.so xyz.so calendar.so classtable.so credit.so todo.so /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/so'
+make[1]: Entering directory '/home/bbs/src/game'
+install -m 0700 bar.so bingo.so bj.so bwboard.so chessmj.so dice.so dragon.so fantan.so gp.so guessnum.so km.so liteon.so marie.so mine.so nine.so pushbox.so race.so recall.so reversi.so seven.so tetris.so /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/game'
+make[1]: Entering directory '/home/bbs/src/pip'
+install -m 0700 pip.so /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/pip'
+make[1]: Entering directory '/home/bbs/src/util'
+install -m 0700 account acl-sort bbsmail bquota brdmail camera counter expire gem-index hdr-dump mailpost outgo poststat reaper redir setperm setusr showACCT showBRD showDIR showUSR topgem topsong topusr /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/util'
+make[1]: Entering directory '/home/bbs/src/util/backup'
+install -m 0700 backupacct backupbrd backupgem backupoth backupusr restoreacct restorebrd restoregem restoreusr /home/bbs/bin
+make[1]: Leaving directory '/home/bbs/src/util/backup'
+make[1]: Entering directory '/home/bbs/src/util/tran'
+ok!
+make[1]: Leaving directory '/home/bbs/src/util/tran'
+make[1]: Entering directory '/home/bbs/src/util/uno'
+ok!
+make[1]: Leaving directory '/home/bbs/src/util/uno'
+make: *** No rule to make target '2'.  Stop.
