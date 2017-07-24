@@ -22,12 +22,11 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 本分支在 CentOS 7.3.1611 32bit (AltArch) 下測試過, 目前可以正常運作。<br>
 Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
-<br>其他作業系統與核心則沒有試過不清楚，這篇也會略過相關部分，轉信設定部分這裡也不會提
-<br>對該部分有興趣建議按[原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)嘗試。
+其他作業系統與核心則沒有試過不清楚，這篇也會略過相關部分，轉信設定部分這裡也不會提<br>
+對該部分有興趣建議自行按[原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)嘗試。
 
 安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，<br>
 唯一要提醒您的是，請安裝 **nano vim make gcc git xinetd** 等程式套件，因為 bbs 會用到。
-
 
 # 二、建立 BBS 帳號
 
@@ -46,7 +45,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
     -root- # vim /etc/group
 
-(假設編輯器是 `vim`，如果不是的話，請自行改用其他編輯器如 `nano` )
+(假設編輯器是 `vim`，如果不是的話，請自行改用其他編輯器如 `nano`、`gedit` )
 
 如果您是 Linux 的話，在最後一行加上
 
@@ -64,7 +63,6 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 (當然以上新增使用者群組步驟，您也可以用 `useradd`,`groupadd` 的指令來完成相同的動作)
 
 記得設定好bbs家目錄的權限, 尤其如果常以root身分從複製資料過去時更要注意.
-
 
 # 三、下載 BBS 程式
 
@@ -124,7 +122,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 # 五 (Ａ)、設定 BBS 環境 -- 如果有 xinetd
 
-如果沒有 /etc/xinetd.d/ 這目錄，請跳到五（Ｂ或Ｃ），通常 Linux 應該有 xinetd 套件可以安裝才對。
+如果沒有 /etc/xinetd.d/ 這目錄，請跳到五（Ｂ），通常 Linux 應該有 xinetd 套件可以安裝才對。<br>
 在 CentOS 7.3.1611 32 bit (AltArch) 下可以嘗試用相關指令先行安裝並開啟相關服務
 
 確定安裝完成後
@@ -184,7 +182,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 # 五 (Ｂ)、設定 BBS 環境 -- 如果沒有 xinetd
 
-沒 xinetd，改用 standalone 啟動。
+沒有 xinetd 或不想用它來啟動，可改用 standalone 啟動。
 
 以 root 身分登入。
 
@@ -213,7 +211,6 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
     -root- # chmod +x /etc/rc.local
 
 這樣開機後 rc.local 才跑得動
-
 
 # 六、其他設定
 
