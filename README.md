@@ -19,11 +19,14 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 # 一、安裝作業系統
 
-本分支僅在 Debian 9 GNU/Linux (32bit) 測試過**勉強**可以運作。
-<br>其他系統則沒有試過不清楚，這篇也會砍掉關於此部分，轉信設定部分也會砍
+本分支在 CentOS 7.3.1611 32bit (AltArch) 下測試過, 目前可以正常運作。<br>
+Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
+
+<br>其他作業系統與核心則沒有試過不清楚，這篇也會略過相關部分，轉信設定部分這裡也不會提
 <br>對該部分有興趣建議按[原文件](http://processor.tfcis.org/~itoc/doc/101_install.htm)嘗試。
 
-安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，唯一要提醒您的是，請安裝 **nano vim make gcc git xinetd** 等程式套件，因為 bbs 會用到。
+安裝作業系統時就像平常安裝一樣，沒什麼特別要注意的，<br>
+唯一要提醒您的是，請安裝 **nano vim make gcc git xinetd** 等程式套件，因為 bbs 會用到。
 
 
 # 二、建立 BBS 帳號
@@ -35,10 +38,11 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 如果您是 Linux 的話，在最後一行加上
 
-    bbs:x:9999:999:BBS Administrator,,,:/home/bbs:/bin/bash
+    bbs:x:9999:999:BBS Administrator:/home/bbs:/bin/bash
     (為求保險起見跟 `/etc/passwd` 裡列出其他使用者的格式一樣)
 
-(當然您也可以用 `useradd`,`adduser` 的指令來完成相同的動作)
+(為求保險起見跟 `/etc/passwd` 裡列出其他使用者的格式一樣)<br>
+(要注意 GID 是否與檔案裡其他提到的使用者重複, 以免出現權限問題)<br>
 
     -root- # vim /etc/group
 
@@ -48,7 +52,8 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
     bbs:x:999:bbs
 
-(當然您也可以用 `addgroup` 或 `groupadd` 的指令來完成相同的動作)
+(為求保險起見跟 `/etc/group` 裡列出其他使用者的格式一樣)<br>
+(要注意 GID 是否與檔案裡其他提到的使用者重複, 以免出現權限問題)<br>
 
     -root- # passwd bbs
 
@@ -56,11 +61,14 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
     -root- # chown -R bbs:bbs /home/bbs
 
-記得設定好bbs家目錄的權限, 尤其如果常以root身分從複製資料過去時更要注意
+(當然以上新增使用者群組步驟，您也可以用 `useradd`,`groupadd` 的指令來完成相同的動作)
+
+記得設定好bbs家目錄的權限, 尤其如果常以root身分從複製資料過去時更要注意.
+
 
 # 三、下載 BBS 程式
 
-在 [這裡](https://github.com/holishing/maplebbs-itoc/tree/test-bbs) 可以找到最新的程式版本。
+在 [這裡](https://github.com/holishing/maplebbs-itoc) 可以找到最新的程式版本。
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
@@ -80,9 +88,9 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
         NULL}
 
 如果您是 Linux 的話，改 BBSGID 為 999
+**若自己的GID有另外設定, 請自行調整修改**
 
     #define BBSGID          999                     /* Linux 請設為 999 */
-
 
 修改 schoolname bbsname ... 等數項，例如改成以下這樣
 (請參考 `sample/sh/install.sh` 文件前面的註解，對名稱有些限制)
@@ -107,7 +115,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 <br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
 
 您需要等待一段時間來完成編譯
-<br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各BBS站MapleBBS/BBS架站相關看板查詢
+<br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各 BBS 站 MapleBBS架站相關看板查詢
 
     -bbs- $ crontab /home/bbs/maplebbs-itoc/sample/crontab
 
@@ -117,7 +125,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 # 五 (Ａ)、設定 BBS 環境 -- 如果有 xinetd
 
 如果沒有 /etc/xinetd.d/ 這目錄，請跳到五（Ｂ或Ｃ），通常 Linux 應該有 xinetd 套件可以安裝才對。
-在 Debian GNU/Linux 下可以嘗試用以下指令先行安裝並開啟相關服務
+在 CentOS 7.3.1611 32 bit (AltArch) 下可以嘗試用相關指令先行安裝並開啟相關服務
 
 確定安裝完成後
 
@@ -140,7 +148,7 @@ source code 擺放的位置移到第一層以方便將 repositoty 改在 `/home/
 
 .
 
-    -root- # vim /etc/xinetd.d/xchat
+    -root- # vim /etc/xinetd.d/xchatd
 
 將這檔案改成此內容 (這檔案有可能原本是沒有任何文字的開新檔案)
 
@@ -243,4 +251,7 @@ WWW: http://processor.tfcis.org/~itoc
 
 Adapt by holishing.bbs@ptt.cc
 
-other post for ref.: [1](https://www.ptt.cc/bbs/Maple/M.1497541796.A.936.html) [2](https://www.ptt.cc/bbs/Maple/M.1497605619.A.383.html)
+other post for ref.:
+
+* [https://www.ptt.cc/bbs/Maple/M.1497541796.A.936.html](https://www.ptt.cc/bbs/Maple/M.1497541796.A.936.html)
+* [https://www.ptt.cc/bbs/Maple/M.1497605619.A.383.html](https://www.ptt.cc/bbs/Maple/M.1497605619.A.383.html)
