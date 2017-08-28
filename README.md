@@ -1,10 +1,6 @@
 # maplebbs-clam
-<<<<<<< HEAD
-experimental project fork from [maplebbs-itoc](https://github.com/holishing/maplebbs-itoc) ( [origin](https://github.com/xeonchen/maplebbs-itoc) )
 
-=======
->>>>>>> 05fc5adc2354a090f9884d545128c32c18629d0a
-experimental fork from maplebbs-itoc
+experimental project fork from [maplebbs-itoc](https://github.com/holishing/maplebbs-itoc) ( [origin](https://github.com/xeonchen/maplebbs-itoc) )
 
 for not official patch
 
