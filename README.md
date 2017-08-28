@@ -1,6 +1,10 @@
 # maplebbs-clam
 experimental project fork from [maplebbs-itoc](https://github.com/holishing/maplebbs-itoc) ( [origin](https://github.com/xeonchen/maplebbs-itoc) )
 
+experimental fork from maplebbs-itoc
+
+for not official patch
+
 # 快速安裝手冊 
 **(encoding: utf-8)**
 
@@ -255,4 +259,3 @@ other post for ref.:
 
 * [https://www.ptt.cc/bbs/Maple/M.1497541796.A.936.html](https://www.ptt.cc/bbs/Maple/M.1497541796.A.936.html)
 * [https://www.ptt.cc/bbs/Maple/M.1497605619.A.383.html](https://www.ptt.cc/bbs/Maple/M.1497605619.A.383.html)
-
