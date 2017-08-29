@@ -6,6 +6,8 @@ for not official patch
 
 # Plan
 
+* add "addpost" patch : like `util/post.c` in [pttbbs](https://github.com/ptt/pttbbs)
+
 * improve INSTALL procedure
 
 * add piaip's BBS patch
