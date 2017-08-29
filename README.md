@@ -1,10 +1,12 @@
 # maplebbs-clam
 
-experimental fork from maplebbs-itoc
+experimental fork from [maplebbs-itoc](https://github.com/holishing/maplebbs-itoc) ( https://github.com/xeonchen/maplebbs-itoc )
 
 for not official patch
 
 # Plan
+
+* improve INSTALL procedure
 
 * add piaip's BBS patch
 
@@ -14,8 +16,9 @@ for not official patch
     
     + add BBSLua patch
     
-* improve Web
+* improve Web surface
+
+* make backup-trans mechenism more completelty
 
 * make websocket connection work
 
-* make backup-trans mechenism more completelty
