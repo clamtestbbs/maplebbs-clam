@@ -88,6 +88,11 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
     -bbs- $ make init linux install
 
+**若之後只是要重新編譯程式按裝, 請勿輸入以上指令, 以免重要資料被覆蓋, 請輸入:**
+
+    -bbs- $ make clean linux install
+	
+
 如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
 <br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
 
