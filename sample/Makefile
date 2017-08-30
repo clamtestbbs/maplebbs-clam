@@ -10,10 +10,13 @@
 
 ####### CAUTION: Still Testing!! Don't try it on important sites #######
 
+BBSHOME = /home/bbs
 
-SBBS =  bbs
+SRCD = $(BBSHOME)/maplebbs-clam
 
-SCON =  config.h
+SBBS = $(SRCD)/sample/bbs
+
+SCON = $(SRCD)/sample/config.h
 
 #SMAK = ../src        ## not done yet
 
