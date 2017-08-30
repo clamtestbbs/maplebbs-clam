@@ -93,9 +93,11 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 進入第一個編輯器畫面時，請修改 `HOST_ALIASES`，把您所有的 fqdn 都加進去
 
+```c
     #define HOST_ALIASES    {MYHOSTNAME, MYIPADDR, \
         "wolf.twbbs.org", "wolf.twbbs.org.tw", \
         NULL}
+```
 
 如果您是 Linux 的話，另外要再改 BBSGID 為 999
 **若自己的GID有另外設定, 請自行調整修改**
@@ -108,13 +110,13 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 (請參考 `sample/sh/install.sh` 文件前面的註解，對名稱有些限制)
 
 ```c
-	#define SCHOOLNAME  "交大電子"      /* 組織名稱 */
-	#define BBSNAME     "交大電子"      /* 中文站名 */
-	#define BBSNAME2    "AppleBBS"       /* 英文站名 */
-	#define SYSOPNICK   "站長大大"      /* sysop 的暱稱 */
+    #define SCHOOLNAME  "交大電子"      /* 組織名稱 */
+    #define BBSNAME     "交大電子"      /* 中文站名 */
+    #define BBSNAME2    "AppleBBS"       /* 英文站名 */
+    #define SYSOPNICK   "站長大大"      /* sysop 的暱稱 */
 
-	#define MYIPADDR    "140.113.55.66"       /* IP address */
-	#define MYHOSTNAME  "nctu5566.dorm3.nctu.edu.tw"   /* 網路地址 FQDN */
+    #define MYIPADDR    "140.113.55.66"       /* IP address */
+    #define MYHOSTNAME  "nctu5566.dorm3.nctu.edu.tw"   /* 網路地址 FQDN */
 ```
 
 您需要等待一段時間來完成編譯
@@ -173,12 +175,14 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 加入以下數行 (這檔案有可能原本是沒有任何文字的開新檔案)
 
+```sh	
     #!/bin/sh
     #
     # MapleBBS
     #
     su bbs -c '/home/bbs/bin/camera'
     su bbs -c '/home/bbs/bin/account'
+```
 
 之後再
 

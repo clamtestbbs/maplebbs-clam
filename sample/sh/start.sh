@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 /home/bbs/bin/account
 /home/bbs/bin/camera
 /home/bbs/bin/bbsd 9987
