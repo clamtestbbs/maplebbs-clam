@@ -20,6 +20,11 @@ SCON = $(SRCD)/sample/config.h
 
 #SMAK = ../src        ## not done yet
 
+all: 
+	@echo "Please enter 'make sample-type', "
+	@echo " make init   : for install sample BBS structure (cover old data) "
+	@echo " make config : for install sample config for a new BBS (still need correct manually)"
+
 init:
 	@cp -r $(SBBS)/* ~/;cp $(SBBS)/.BRD ~/
 	@cp $(SCON) ../src/include/
