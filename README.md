@@ -72,7 +72,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 # 三、下載 BBS 程式
 
-在 [這裡](https://github.com/holishing/maplebbs-itoc) 可以找到最新的程式版本。
+在 [這裡](https://github.com/holishing/maplebbs-clam) 可以找到最新的程式版本。
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
@@ -82,7 +82,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 以 bbs 身分登入，進去 source 目錄 (`/home/bbs/maplebbs-clam`) 。
 
-    -bbs- $ cd /home/bbs/maplebbs-itoc
+    -bbs- $ cd /home/bbs/maplebbs-clam
 
 直接執行以下指令，進入設定與自動化安裝程序：
 
