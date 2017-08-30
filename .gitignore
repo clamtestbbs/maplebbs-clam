@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 include/config.h
 include/config.h.*
 *.a
@@ -127,8 +126,6 @@ so/vote.so
 so/xyz.so
 util/outgo
 
-=======
->>>>>>> 05fc5adc2354a090f9884d545128c32c18629d0a
 # Prerequisites
 *.d
 
