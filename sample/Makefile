@@ -16,12 +16,6 @@ SRCD = $(BBSHOME)/maplebbs-clam
 
 SAM  = $(SRCD)/sample
 
-SBBS = $(SAM)/bbs
-
-SCON = $(SAM)/config.h
-
-#SMAK = ../src        ## not done yet
-
 all:
 	@echo "Please enter 'make sample-type', "
 	@echo -e " make init   : for install sample BBS structure (\033[1;31mWARNING: will COVER old data!!\033[m) "
@@ -42,6 +36,4 @@ init:
 
 config:
 	@cp -i $(SAM)/config.h $(SRCD)/include/
-
-#mainmake:            ## not done yet
 
