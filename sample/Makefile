@@ -22,18 +22,24 @@ SCON = $(SAM)/config.h
 
 #SMAK = ../src        ## not done yet
 
-all: 
+all:
 	@echo "Please enter 'make sample-type', "
-	@echo " make init   : for install sample BBS structure (cover old data) "
+	@echo -e " make init   : for install sample BBS structure (\033[1;31mWARNING: will COVER old data!!\033[m) "
 	@echo " make config : for install sample config for a new BBS (still need correct manually)"
 
+install:
+	@echo "Please enter 'make sample-type', "
+	@echo -e " make init   : for install sample BBS structure (\033[1;31mWARNING: will COVER old data!!\033[m) "
+	@echo " make config : for install sample config for a new BBS (still need correct manually)"
+
+
 init:
-	@cp -r $(SAM)/bbs/* $(BBSHOME)/ ; cp $(SAM)/bbs/.BRD $(BBSHOME)/
-	@cp $(SAM)/config.h $(SRCD)/include/
+	@cp -ir $(SAM)/bbs/* $(BBSHOME)/ ; cp $(SAM)/bbs/.BRD $(BBSHOME)/
+	@cp -i $(SAM)/config.h $(SRCD)/include/
 	@crontab $(SAM)/crontab
 
 config:
-	@cp $(SAM)/config.h $(SRCD)/include/
+	@cp -i $(SAM)/config.h $(SRCD)/include/
 
 #mainmake:            ## not done yet
 

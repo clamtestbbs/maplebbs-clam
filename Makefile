@@ -23,7 +23,8 @@ all:
 	@echo " make freebsd : for BSD 4.4 systems"
 	@echo " make bsd     : for BSD systems, cc or gcc, if not in the above lists"
 	@echo " make cygwin  : for Microsoft Windows and Cygwin gcc"
-
+	@echo " "
+	@echo -e " make init    : for install sample BBS structure (\033[1;31mWARNING: will COVER old data!!\033[m) "
 
 sun:
 	@cd lib; make
@@ -127,6 +128,9 @@ install:
 	@cd util/backup; make install
 	@cd util/tran; make install
 	@cd util/uno; make install
+
+init:
+	@cd sample; make init
 
 update:
 	@cd daemon; make update
