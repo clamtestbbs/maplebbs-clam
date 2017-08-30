@@ -36,7 +36,7 @@ install:
 init:
 	@cp -ir $(SAM)/bbs/* $(BBSHOME)/ ; cp $(SAM)/bbs/.BRD $(BBSHOME)/
 	@cp -i $(SAM)/config.h $(SRCD)/include/
-	@vim -c 'set fencs=big5' -c 'e!' $(SRCD)/include//config.h
+	@vim -c 'set fencs=big5' -c 'e!' $(SRCD)/include/config.h
 	@crontab $(SAM)/crontab
 	@crontab -e
 
