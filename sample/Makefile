@@ -14,9 +14,11 @@ BBSHOME = /home/bbs
 
 SRCD = $(BBSHOME)/maplebbs-clam
 
-SBBS = $(SRCD)/sample/bbs
+SAM  = $(SRCD)/sample
 
-SCON = $(SRCD)/sample/config.h
+SBBS = $(SAM)/bbs
+
+SCON = $(SAM)/config.h
 
 #SMAK = ../src        ## not done yet
 
@@ -26,12 +28,12 @@ all:
 	@echo " make config : for install sample config for a new BBS (still need correct manually)"
 
 init:
-	@cp -r $(SBBS)/* ~/;cp $(SBBS)/.BRD ~/
-	@cp $(SCON) ../src/include/
-	@crontab ./crontab
+	@cp -r $(SAM)/bbs/* $(BBSHOME)/ ; cp $(SAM)/bbs/.BRD $(BBSHOME)/
+	@cp $(SAM)/config.h $(SRCD)/include/
+	@crontab $(SAM)/crontab
 
 config:
-	@cp $(SCON) ../src/include/
+	@cp $(SAM)/config.h $(SRCD)/include/
 
 #mainmake:            ## not done yet
 
