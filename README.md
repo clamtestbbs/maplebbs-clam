@@ -76,55 +76,55 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 在 bbs 的家目錄(`/home/bbs`)載下來就對了
 
-    -bbs- ~$ git clone https://github.com/holishing/maplebbs-itoc
+    -bbs- ~$ git clone https://github.com/holishing/maplebbs-clam
     
 # 四、安裝 BBS
 
-以 bbs 身分登入，進去 source 目錄 (`/home/bbs/maplebbs-itoc`) 。
+以 bbs 身分登入，進去 source 目錄 (`/home/bbs/maplebbs-clam`) 。
 
-    -bbs- $ cd /home/bbs/maplebbs-itoc; cp sample/config.h include/
-    -bbs- $ vim /home/bbs/maplebbs-itoc/include/config.h
+    -bbs- $ cd /home/bbs/maplebbs-itoc
 
-修改 `HOST_ALIASES`，把您所有的 fqdn 都加進去
+直接執行以下指令，進入設定與自動化安裝程序：
+
+    -bbs- $ make init linux install
+
+如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
+<br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
+
+進入第一個編輯器畫面時，請修改 `HOST_ALIASES`，把您所有的 fqdn 都加進去
 
     #define HOST_ALIASES    {MYHOSTNAME, MYIPADDR, \
         "wolf.twbbs.org", "wolf.twbbs.org.tw", \
         NULL}
 
-如果您是 Linux 的話，改 BBSGID 為 999
+如果您是 Linux 的話，另外要再改 BBSGID 為 999
 **若自己的GID有另外設定, 請自行調整修改**
 
+```c
     #define BBSGID          999                     /* Linux 請設為 999 */
+```
 
-修改 schoolname bbsname ... 等數項，例如改成以下這樣
+另外還要修改 校名、站名 ... 等數項，例如改成以下這樣
 (請參考 `sample/sh/install.sh` 文件前面的註解，對名稱有些限制)
 
-    schoolname="交大電子"
-    bbsname="蘋果樂園"
-    bbsname2="AppleBBS"
-    sysopnick="站長大大"
-    myipaddr="140.113.55.66"
-    myhostname="nctu5566.dorm3.nctu.edu.tw"
+```c
+	#define SCHOOLNAME  "交大電子"      /* 組織名稱 */
+	#define BBSNAME     "交大電子"      /* 中文站名 */
+	#define BBSNAME2    "AppleBBS"       /* 英文站名 */
+	#define SYSOPNICK   "站長大大"      /* sysop 的暱稱 */
 
-之後還要記得將 bbs 預設的架構範例複製到家目錄(`/home/bbs`)底下建立起來:
-
-    -bbs- $ cd /home/bbs/maplebbs-itoc (確認自己還在source目錄底下)
-    -bbs- $ cp -r sample/bbs/* ~;cp sample/bbs/.* ~
-
-之後確定自己在`/home/bbs/maplebbs-itoc/`目錄底下之後就開始編譯
-
-    -bbs- $ make clean linux install 
-
-如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
-<br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
+	#define MYIPADDR    "140.113.55.66"       /* IP address */
+	#define MYHOSTNAME  "nctu5566.dorm3.nctu.edu.tw"   /* 網路地址 FQDN */
+```
 
 您需要等待一段時間來完成編譯
 <br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各 BBS 站 MapleBBS架站相關看板查詢
 
-    -bbs- $ crontab /home/bbs/maplebbs-itoc/sample/crontab
+可執行:
 
-把 sample/crontab 的內容加入 crontab 讓作業系統自動排程
+    -bbs- $ sh /home/bbs/maplebbs-clam/sh/start.sh
 
+確認程式是否可以執行
 
 # 五 (Ａ)、設定 BBS 環境 -- 如果有 xinetd
 
@@ -196,6 +196,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
 加入以下數行 (這檔案有可能原本是沒有任何文字的開新檔案)
 
+```sh	
     #!/bin/sh
     #
     # MapleBBS
@@ -211,6 +212,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 
     su bbs -c '/home/bbs/bin/camera'
     su bbs -c '/home/bbs/bin/account'
+```
 
 之後再
 
