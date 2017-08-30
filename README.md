@@ -91,7 +91,9 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 如果您是使用 其他作業系統環境 的話，還要指令裡的 `linux` 改成其他類型如:
 <br>`sun` `solaris` `sol-x86` `freebsd` `bsd`
 
-進入第一個編輯器畫面時，請修改 `HOST_ALIASES`，把您所有的 fqdn 都加進去
+進入**第一個 vim 編輯器畫面**(`include/config.h`)時，請利用 `i` `a` `o` `ESC` 等指令
+
+修改 `HOST_ALIASES`，把您所有的 fqdn 都加進去
 
 ```c
     #define HOST_ALIASES    {MYHOSTNAME, MYIPADDR, \
@@ -103,7 +105,7 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 **若自己的GID有另外設定, 請自行調整修改**
 
 ```c
-    #define BBSGID          999                     /* Linux 請設為 999 */
+    #define BBSGID          999                     /* FreeBSD 請設為 99 */
 ```
 
 另外還要修改 校名、站名 ... 等數項，例如改成以下這樣
@@ -112,17 +114,22 @@ Debian 9 GNU/Linux 下測試目前仍有程式執行上的問題有待解決。
 ```c
     #define SCHOOLNAME  "交大電子"      /* 組織名稱 */
     #define BBSNAME     "交大電子"      /* 中文站名 */
-    #define BBSNAME2    "AppleBBS"       /* 英文站名 */
+    #define BBSNAME2    "AppleBBS"     /* 英文站名 */
     #define SYSOPNICK   "站長大大"      /* sysop 的暱稱 */
 
     #define MYIPADDR    "140.113.55.66"       /* IP address */
     #define MYHOSTNAME  "nctu5566.dorm3.nctu.edu.tw"   /* 網路地址 FQDN */
 ```
 
-您需要等待一段時間來完成編譯
-<br>如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各 BBS 站 MapleBBS架站相關看板查詢
+確定修改完後, 按下 `ESC` 後再輸入 `:wq` 指令完成設定
 
-可執行:
+進入**第二個 vim 編輯器畫面**(`設定 crontab`)時, 若無進階需求, 可以直接輸入 `:wq` 指令完成設定.
+
+之後您需要等待一段時間來完成編譯
+
+如果有相關編譯問題可參考 [原文件說明](http://processor.tfcis.org/~itoc) 或至各 BBS 站 MapleBBS架站相關看板查詢
+
+最後確認是否安裝成功時, 可輸入以下指令:
 
     -bbs- $ sh /home/bbs/maplebbs-clam/sh/start.sh
 
