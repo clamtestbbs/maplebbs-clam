@@ -1,4 +1,4 @@
-# maplebbs-clam
+# [maplebbs-clam](https://github.com/holishing/maplebbs-clam)
 
 experimental fork from [maplebbs-itoc](https://github.com/holishing/maplebbs-itoc) ( [origin](https://github.com/xeonchen/maplebbs-itoc) )
 
