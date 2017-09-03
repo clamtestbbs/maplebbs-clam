@@ -8,7 +8,7 @@ for not official patch
 
 * ~~improve INSTALL procedure~~ **(done)**
 
-* add "addpost" patch : like `util/post.c` in [pttbbs](https://github.com/ptt/pttbbs) , for porting [AutoWeatherBBS](https://github.com/holishing/AutoWeatherBBS) project.
+* add "addpost" patch : like `~/bin/post` in [pttbbs](https://github.com/ptt/pttbbs) , for porting [AutoWeatherBBS](https://github.com/holishing/AutoWeatherBBS) project.
 
 * add piaip's BBS patch
 
