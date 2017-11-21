@@ -37,7 +37,7 @@ sun:
 	@$(MAKE) CFLAGS="-O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 linux:
-	@$(MAKE) CFLAGS="-DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
+	@$(MAKE) CFLAGS="-m32 -DLINUX -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 solaris:
 	@$(MAKE) CFLAGS="-DSOLARIS -DSYSV -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
@@ -56,7 +56,7 @@ cygwin:
 
 
 pip.so: $(OBJ)
-	ld -s -G $(OBJ) -o pip.so -L../lib -ldao
+	ld -s -G $(OBJ) -o pip.so -L../lib -ldao -melf_i386
 
 
 install: $(SO)

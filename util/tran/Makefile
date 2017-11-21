@@ -38,7 +38,7 @@ sun:
 	@$(MAKE) CFLAGS="-O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../../include" LDFLAGS="-s -L../../lib -ldao" $(EXE)
 
 linux:
-	@$(MAKE) CFLAGS="-O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao" $(EXE)
+	@$(MAKE) CFLAGS="-m32 -O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-m32 -s -L../../lib -ldao" $(EXE)
 
 solaris:
 	@$(MAKE) CFLAGS="-O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao -lsocket -lnsl -L/usr/ucblib -lucb" $(EXE)
