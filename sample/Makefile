@@ -26,7 +26,6 @@ install:
 	@echo -e " make init   : for install sample BBS structure (\033[1;31mWARNING: will COVER old data!!\033[m) "
 	@echo " make config : for install sample config for a new BBS (still need correct manually)"
 
-
 init:
 	@cp -ir $(SAM)/bbs/* $(BBSHOME)/ ; cp $(SAM)/bbs/.BRD $(BBSHOME)/
 	@cp -i $(SAM)/config.h $(SRCD)/include/

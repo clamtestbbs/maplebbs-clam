@@ -12,7 +12,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 EXE =	bguard bhttpd bmtad bnntpd bpop3d gemd xchatd
 
@@ -40,7 +40,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -O2 -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lsocket -lresolv -lnsl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt" $(EXE)
+	@$(MAKE) CFLAGS="-m32 -DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt" $(EXE)
 
 bsd:
 	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao" $(EXE)

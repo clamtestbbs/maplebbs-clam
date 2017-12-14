@@ -13,7 +13,7 @@
 # ------------------------------------------------------ #
 
 
-CC	= gcc
+CC	= clang
 
 INNOBJS	= channel.o bbslib.o convcode.o inntobbs.o rec_article.o nocem.o history.o
 
@@ -47,7 +47,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -O2 -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lsocket -lnsl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao" $(EXE)
+	@$(MAKE) CFLAGS="-m32 -O2 -pipe -I../include -fno-stack-protector -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-m32 -s -L../lib -L/usr/lib32 -ldao" $(EXE)
 
 bsd:
 	@$(MAKE) CFLAGS="-O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao" $(EXE)

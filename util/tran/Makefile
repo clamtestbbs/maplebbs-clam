@@ -12,7 +12,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 EXE =	brd2gem transacct transbrd \
 	ats2bmw ats2brd ats2gem ats2mf ats2pal ats2usr \
@@ -47,7 +47,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-O2 -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao -lsocket -lnsl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao" $(EXE)
+	@$(MAKE) CFLAGS="-c -m32 -O2 -pipe -I../../include -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao" $(EXE)
 
 bsd:
 	@$(MAKE) CFLAGS="-O2 -pipe -I../../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../../lib -ldao" $(EXE)

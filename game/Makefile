@@ -13,7 +13,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 SO =	bar.so bingo.so bj.so bwboard.so chessmj.so dice.so dragon.so fantan.so \
 	gp.so guessnum.so km.so liteon.so marie.so mine.so nine.so pushbox.so \
@@ -24,7 +24,7 @@ SO =	bar.so bingo.so bj.so bwboard.so chessmj.so dice.so dragon.so fantan.so \
 .SUFFIXES: .c .o .so
 
 .c.o:	;  $(CC) $(CFLAGS) -c $*.c
-.o.so:	;  ld -s -G $*.o -o $*.so -L../lib -ldao -melf_i386
+.o.so:	;  ld -s -G $*.o -o $*.so -L../lib -ldao -melf_i386_fbsd
 
 
 all: 
@@ -50,7 +50,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -DSYSV -O2 -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
+	@$(MAKE) CFLAGS="-c -m32 -DBSD44 -O2 -pipe -fno-stack-protector -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 bsd:
 	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)

@@ -13,7 +13,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 SO =	admutil.so aloha.so bank.so chat.so help.so innbbs.so manage.so newbrd.so \
 	song.so vote.so xyz.so \
@@ -24,7 +24,7 @@ SO =	admutil.so aloha.so bank.so chat.so help.so innbbs.so manage.so newbrd.so \
 .SUFFIXES: .c .o .so
 
 .c.o:	;  $(CC) $(CFLAGS) -c $*.c
-.o.so:	;  ld -s -G $*.o -o $*.so -L../lib -ldao -melf_i386
+.o.so:	;  ld -s -G $*.o -o $*.so -L../lib -ldao -melf_i386_fbsd
 
 
 all: 
@@ -50,7 +50,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -DSYSV -O2 -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
+	@$(MAKE) CFLAGS="-c -m32 -DBSD44 -O2 -pipe -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 bsd:
 	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)

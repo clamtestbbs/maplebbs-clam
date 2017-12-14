@@ -13,7 +13,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 OBJ =	pip_basic.o pip_ending.o pip_fight.o pip_item.o pip_job.o \
 	pip_menu.o pip_pk.o pip_play.o pip_prac.o pip_quest.o pip_race.o \
@@ -46,7 +46,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -DSYSV -O2 -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
+	@$(MAKE) CFLAGS="-c -m32 -DBSD44 -O2 -pipe -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
 
 bsd:
 	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" $(SO)
@@ -56,7 +56,7 @@ cygwin:
 
 
 pip.so: $(OBJ)
-	ld -s -G $(OBJ) -o pip.so -L../lib -ldao -melf_i386
+	ld -s -G $(OBJ) -o pip.so -L../lib -ldao -melf_i386_fbsd
 
 
 install: $(SO)

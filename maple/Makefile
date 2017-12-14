@@ -12,7 +12,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 SRC =	acct.c bbsd.c bmw.c board.c cache.c edit.c favor.c \
 	gem.c mail.c menu.c more.c pal.c post.c talk.c ulist.c \
@@ -48,7 +48,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-DSOLARIS -DSYSV -O2 -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-s -L../lib -ldao -ltermcap -lsocket -lnsl -lresolv -lelf -ldl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-s -L../lib -ldao -lcrypt -Wl,--export-dynamic" $(EXE)
+	@$(MAKE) CFLAGS="-m32 -DBSD44 -O2 -pipe -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-m32 -s -L../lib -ldao -lcrypt -Wl,--export-dynamic" $(EXE)
 
 bsd:
 	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-s -L../lib -ldao" $(EXE)

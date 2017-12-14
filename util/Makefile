@@ -12,7 +12,7 @@
 # ------------------------------------------------------ #
 
 
-CC =	gcc
+CC =	clang
 
 EXE =	account acl-sort bbsmail bquota brdmail camera counter expire \
 	gem-index hdr-dump mailpost outgo poststat reaper redir setperm setusr \
@@ -42,7 +42,7 @@ sol-x86:
 	@$(MAKE) CFLAGS="-O2 -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lsocket -lresolv -lnsl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt" $(EXE)
+	@$(MAKE) CFLAGS="-m32 -O2 -pipe -I../include -fomit-frame-pointer -fno-stack-protector -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt" $(EXE)
 
 bsd:
 	@$(MAKE) CFLAGS="-O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao" $(EXE)

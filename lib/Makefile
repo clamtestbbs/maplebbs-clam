@@ -8,10 +8,10 @@
 # ------------------------------------------------------ #
 
 
-CC	= gcc
+CC	= clang
 RANLIB	= ranlib
-CPROTO	= cproto -E"gcc -pipe -E" -I../include # -s -v
-CFLAGS	= -m32 -O2 -pipe -fomit-frame-pointer -Wunused -I../include
+CPROTO	= cproto -E"clang -pipe -E" -I../include # -s -v
+CFLAGS	= -c -m32 -O2 -pipe -fomit-frame-pointer -fno-stack-protector -Wunused -I../include
 
 
 # ------------------------------------------------------ #
