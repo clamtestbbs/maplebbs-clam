@@ -28,25 +28,25 @@ all:
 	@echo " make cygwin  : for Microsoft Windows and Cygwin gcc"
 
 sun:
-	@$(MAKE) CFLAGS="-O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-s -L../lib -ldao" $(EXE)
+	@$(MAKE) CFLAGS="-g -O2 -pipe -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses -I../include" LDFLAGS="-L../lib -ldao" $(EXE)
 
 linux:
-	@$(MAKE) CFLAGS="-m32 -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt -lresolv" $(EXE)
+	@$(MAKE) CFLAGS="-g -m32 -DLINUX -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao -lcrypt -lresolv" $(EXE)
 
 solaris:
-	@$(MAKE) CFLAGS="-DSOLARIS -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lsocket -lresolv -lnsl -L/usr/ucblib -lucb -R/usr/ucblib" $(EXE)
+	@$(MAKE) CFLAGS="-g -DSOLARIS -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao -lsocket -lresolv -lnsl -L/usr/ucblib -lucb -R/usr/ucblib" $(EXE)
 
 sol-x86:
-	@$(MAKE) CFLAGS="-DSOLARIS -O2 -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lsocket -lresolv -lnsl" $(EXE)
+	@$(MAKE) CFLAGS="-g -DSOLARIS -O2 -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao -lsocket -lresolv -lnsl" $(EXE)
 
 freebsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao -lcrypt" $(EXE)
+	@$(MAKE) CFLAGS="-g -DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao -lcrypt" $(EXE)
 
 bsd:
-	@$(MAKE) CFLAGS="-DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-s -L../lib -ldao" $(EXE)
+	@$(MAKE) CFLAGS="-g -DBSD44 -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao" $(EXE)
 
 cygwin:
-	@$(MAKE) CFLAGS="-DLINUX -DCYGWIN -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-s -L../lib -ldao -lcrypt -lresolv -lcygipc" $(EXE)
+	@$(MAKE) CFLAGS="-g -DLINUX -DCYGWIN -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-L../lib -ldao -lcrypt -lresolv -lcygipc" $(EXE)
 
 
 .c:	;  $(CC) -o $@ $@.c $(CFLAGS) $(LDFLAGS)
