@@ -109,9 +109,9 @@ cygwin:
 	@cd daemon; make cygwin
 	@cd innbbsd; make cygwin
 	@cd maple; make cygwin
-	@cd so; make cygwin
-	@cd game; make cygwin
-	@cd pip; make cygwin
+	#@cd so; make cygwin
+	#@cd game; make cygwin
+	#@cd pip; make cygwin
 	@cd util; make cygwin
 	@cd util/backup; make cygwin
 	@cd util/tran; make cygwin
@@ -121,9 +121,9 @@ install:
 	@cd daemon; make install
 	@cd innbbsd; make install
 	@cd maple; make install
-	@cd so; make install
-	@cd game; make install
-	@cd pip; make install
+	#@cd so; make install
+	#@cd game; make install
+	#@cd pip; make install
 	@cd util; make install
 	@cd util/backup; make install
 	@cd util/tran; make install

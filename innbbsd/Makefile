@@ -53,7 +53,7 @@ bsd:
 	@$(MAKE) CFLAGS="-g -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao" $(EXE)
 
 cygwin:
-	@$(MAKE) CFLAGS="-g -DCYGWIN -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-L../lib -ldao -lcygipc" $(EXE)
+	@$(MAKE) CFLAGS="-g -DCYGWIN -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-L../lib -ldao" $(EXE)
 
 
 
