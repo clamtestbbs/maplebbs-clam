@@ -48,7 +48,7 @@ bsd:
 	@$(MAKE) CFLAGS="-g -O2 -pipe -I../include -fomit-frame-pointer -Wunused -Wno-unused-result -Wno-parentheses" LDFLAGS="-L../lib -ldao" $(EXE)
 
 cygwin:
-	@$(MAKE) CFLAGS="-g -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-L../lib -ldao -lcrypt -lresolv -lcygipc" $(EXE)
+	@$(MAKE) CFLAGS="-g -O2 -pipe -I../include -fomit-frame-pointer -Wunused" LDFLAGS="-L../lib -ldao -lcrypt -lresolv" $(EXE)
 
 
 .c:	;  $(CC) -o $@ $@.c $(CFLAGS) $(LDFLAGS)
