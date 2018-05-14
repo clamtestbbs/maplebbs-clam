@@ -613,8 +613,10 @@ ansi_html(fpw, src)
       /* 其他的自己加吧 :) */
       if (!str_ncmp(src - 1, "http://", 7))
 	ansi_hyperlink(fpw, src - 1);
-      else if (!str_ncmp(src - 1, "telnet://", 9))
+      else if (!str_ncmp(src - 1, "https://", 8))
 	ansi_hyperlink(fpw, src - 1);
+      //else if (!str_ncmp(src - 1, "telnet://", 9))
+	//ansi_hyperlink(fpw, src - 1);
 #endif
 
       fputc(ch1, fpw);
@@ -952,8 +954,8 @@ out_title(fpw, title)
     "  function mOut(obj) {obj.bgColor='" HCOLOR_BG "';}\n"
     "-->\n</script>\n"
     "<style type=text/css>\n"
-    "  PRE {font-size: 15pt; line-height: 15pt; font-weight: lighter; background-color: #000000; color: #C0C0C0;}\n"
-    "  TD  {font-size: 15pt; line-height: 15pt; font-weight: lighter;}\n"
+    "  PRE {font-size: 15pt; line-height: 15pt; font-weight: lighter; background-color: #000000; color: #C0C0C0; font-family: 'Noto Sans TC',sans-serif; @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); }\n"
+    "  TD  {font-size: 15pt; line-height: 15pt; font-weight: lighter; font-family: 'Noto Sans TC',sans-serif; @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);  }\n"
     "</style>\n"
     "<link rel=stylesheet href=/img?ansi.css type=text/css>\n"
     "</head>\n"
@@ -962,8 +964,8 @@ out_title(fpw, title)
     "<input type=image src=/img?back.gif onclick=\"javascript:history.go(-1);\"> / "
     "<a href=/class><img src=/img?class.gif border=0></a> / "
     "<a href=/brdlist><img src=/img?board.gif border=0></a> / "
-    "<a href=/fvrlist><img src=/img?favor.gif border=0></a> / "
-    "<a href=/mbox><img src=/img?mbox.gif border=0></a> / "
+    //"<a href=/fvrlist><img src=/img?favor.gif border=0></a> / "
+    //"<a href=/mbox><img src=/img?mbox.gif border=0></a> / "
     "<a href=/usrlist><img src=/img?user.gif border=0></a> / "
     "<a href=telnet://" MYHOSTNAME "><img src=/img?telnet.gif border=0></a><br>\n", fpw);
 }
@@ -1926,8 +1928,8 @@ postlist_list(fpw, folder, brdname, start, total)
   int fd, xmode;
 
   fputs("<table cellspacing=0 cellpadding=4 border=0>\n<tr bgcolor=" HCOLOR_TIE ">\n"
-    "  <td width=15>標</td>\n"
-    "  <td width=15>刪</td>\n"
+    //"  <td width=15>標</td>\n"
+    //"  <td width=15>刪</td>\n"
     "  <td width=50>編號</td>\n"
     "  <td width=10>m</td>\n"
 
@@ -1959,10 +1961,11 @@ postlist_list(fpw, folder, brdname, start, total)
 	*ptr2 = '\0';
 
       fputs("<tr onmouseover=mOver(this); onmouseout=mOut(this);>\n", fpw);
+#if 0
       if (brdname)
       {
 	fprintf(fpw, "  <td><a href=/mpost?%s&%d&%d><img src=/img?mark.gif border=0></a></td>\n"
-	  "  <td><a href=/dpost?%s&%d&%d><img src=/img?del.gif border=0></a></td>\n",
+	   "  <td><a href=/dpost?%s&%d&%d><img src=/img?del.gif border=0></a></td>\n",
 	  brdname, i, hdr.chrono, brdname, i, hdr.chrono);
       }
       else
@@ -1971,7 +1974,7 @@ postlist_list(fpw, folder, brdname, start, total)
 	  "  <td><a href=/dmail?%d&%d><img src=/img?del.gif border=0></a></td>\n",
 	  i, hdr.chrono, i, hdr.chrono);
       }
-
+#endif
       xmode = hdr.xmode;
 
       fprintf(fpw, "  <td>%d</td>\n  <td>%s</td>\n  <td>",
@@ -2025,7 +2028,7 @@ postlist_neck(fpw, start, total, brdname)
       brdname, start, HTML_TALL);
   }
 
-  fprintf(fpw, "></td>\n  <td width=20%% align=center><a href=/dopost?%s target=_blank>發表文章</a></td>\n"
+  fprintf(fpw, "></td>\n"//  <td width=20%% align=center><a href=/dopost?%s target=_blank>發表文章</a></td>\n"
     "  <td width=20%% align=center><a href=/gem?%s>精華區</a></td>\n"
     "  <td width=20%% align=center><a href=/brdlist>看板列表</a>&nbsp;"
     "<a href=/rss?%s><img border=0 src=/img?xml.gif alt=\"RSS 訂閱\這個看板\"></a></td>\n"
@@ -2264,7 +2267,7 @@ more_neck(fpw, pos, total, brdname, xname)
   else if (brdname)
   {
     fprintf(fpw, "></td>\n  <td width=20%% align=center><a href=/bmost?%s&%d target=_blank>同標題</a></td>\n"
-      "  <td width=20%% align=center><a href=/dopost?%s target=_blank>發表文章</a></td>\n"
+      //"  <td width=20%% align=center><a href=/dopost?%s target=_blank>發表文章</a></td>\n"
       "  <td width=20%% align=center><a href=/brd?%s>文章列表</a",
       brdname, pos,
       brdname, brdname);
@@ -3047,6 +3050,9 @@ cmd_rss(ap)
 	lseek(fd, fsize, SEEK_SET);
 	read(fd, &hdr, sizeof(HDR));
 
+        if( !(hdr.xmode & POST_RESTRICT || hdr.xmode & POST_BOTTOM ) ){
+        //20090923 tonyq: 加密或置底就不顯示
+ 
 	ptr = Gtime(&hdr.chrono);
 	ptr[4] = '\0';
 	fprintf(fpw, "<!-- %d --><item><title>%s</title>"
@@ -3064,11 +3070,31 @@ cmd_rss(ap)
 	  brdname, i,
 	  hdr.owner,
 	  ptr);
+
 	ptr += 5;
 	if (*ptr == '0')
 	  ptr++;
-	fprintf(fpw, "%s</pubDate></item>\n", ptr);
+	fprintf(fpw, "%s</pubDate>\n", ptr);
 
+
+        char folder[64];
+        char fpath[64];
+        FILE *fp;
+                                               
+        brd_fpath(folder, brdname,   FN_DIR );
+        hdr_fpath(fpath, folder, &hdr);
+                                               
+        fprintf(fpw, "<description><![CDATA[");
+                                               
+        if (fp = fopen(fpath, "r"))
+        {
+          txt2htm(fpw, fp);
+          fclose(fp);
+        }
+                                               
+        fprintf(fpw, "]]></description>");
+        fprintf(fpw, "%s</item>\n", ptr);
+	}
 	i--;
       }
     }
