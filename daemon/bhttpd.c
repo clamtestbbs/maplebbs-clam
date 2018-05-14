@@ -745,8 +745,8 @@ txt2htm(fpw, fp)
   FILE *fpw;
   FILE *fp;
 {
-  static const char header1[LINE_HEADER][LEN_AUTHOR1] = {"作者", "標題", "時間"};
-  static const char header2[LINE_HEADER][LEN_AUTHOR2] = {"發信人", "標  題", "發信站"};
+  static const char header1[LINE_HEADER][LEN_AUTHOR1] = {"作者", "標題", "時間","路徑"};
+  static const char header2[LINE_HEADER][LEN_AUTHOR2] = {"發信人", "標  題", "發信站","轉信站"};
   int i;
   char *headvalue, *pbrd, *board;
   char buf[ANSILINELEN];
@@ -3132,6 +3132,7 @@ cmd_mainpage(ap)
   mainpage_neck(fpw, ap->userid, logined);
 
   out_film(fpw, (ap->uptime % 3) + FILM_OPENING0);
+#if 0
   /* 登入 */
   if (!logined)
   {
@@ -3144,7 +3145,7 @@ cmd_mainpage(ap)
       "  <input type=reset value=清除>"
       "</form>\n", fpw);
   }
-
+#endif
   mainpage_neck(fpw, ap->userid, logined);
   return HS_END;
 }
